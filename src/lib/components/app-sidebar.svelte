@@ -15,7 +15,7 @@
 			},
 			{
 				title: 'Games',
-				url: '#',
+				url: '/games',
 				icon: Gamepad,
 				items: [
 					{
