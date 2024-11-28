@@ -10,11 +10,6 @@
 	import SquareTerminal from 'lucide-svelte/icons/square-terminal';
 
 	const data = {
-		user: {
-			name: 'shadcn',
-			email: 'm@example.com',
-			avatar: '/avatars/shadcn.jpg'
-		},
 		navMain: [
 			{
 				title: 'Playground',
@@ -100,35 +95,6 @@
 						url: '#'
 					}
 				]
-			}
-		],
-		navSecondary: [
-			{
-				title: 'Support',
-				url: '#',
-				icon: LifeBuoy
-			},
-			{
-				title: 'Feedback',
-				url: '#',
-				icon: Send
-			}
-		],
-		projects: [
-			{
-				name: 'Design Engineering',
-				url: '#',
-				icon: Frame
-			},
-			{
-				name: 'Sales & Marketing',
-				url: '#',
-				icon: ChartPie
-			},
-			{
-				name: 'Travel',
-				url: '#',
-				icon: Map
 			}
 		]
 	};
