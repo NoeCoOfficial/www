@@ -147,7 +147,7 @@
 	<Sidebar.Header>
 		<Sidebar.Menu>
 			<Sidebar.MenuItem>
-				<Sidebar.MenuButton size="lg">
+				<Sidebar.MenuButton size="lg" class="h-fit">
 					{#snippet child({ props })}
 						<a href="/" aria-label="Logo" {...props}>
 							<enhanced:img src="$lib/images/NoeCoLogoTransparent-Cropped.png" alt="" />
