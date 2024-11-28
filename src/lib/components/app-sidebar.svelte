@@ -149,16 +149,8 @@
 			<Sidebar.MenuItem>
 				<Sidebar.MenuButton size="lg">
 					{#snippet child({ props })}
-						<a href="/" {...props}>
-							<div
-								class="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground"
-							>
-								<Command class="size-4" />
-							</div>
-							<div class="grid flex-1 text-left text-sm leading-tight">
-								<span class="truncate font-semibold">Acme Inc</span>
-								<span class="truncate text-xs">Enterprise</span>
-							</div>
+						<a href="/" aria-label="Logo" {...props}>
+							<enhanced:img src="$lib/images/NoeCoLogoTransparent-Cropped.png" alt="" />
 						</a>
 					{/snippet}
 				</Sidebar.MenuButton>
