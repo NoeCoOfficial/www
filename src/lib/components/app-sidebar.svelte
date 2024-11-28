@@ -1,40 +1,22 @@
 <script lang="ts" module>
 	import BookOpen from 'lucide-svelte/icons/book-open';
 	import Bot from 'lucide-svelte/icons/bot';
-	import ChartPie from 'lucide-svelte/icons/chart-pie';
-	import Frame from 'lucide-svelte/icons/frame';
-	import LifeBuoy from 'lucide-svelte/icons/life-buoy';
-	import Map from 'lucide-svelte/icons/map';
-	import Send from 'lucide-svelte/icons/send';
+	import Home from 'lucide-svelte/icons/home';
+	import Gamepad from 'lucide-svelte/icons/gamepad-2';
 	import Settings2 from 'lucide-svelte/icons/settings-2';
-	import SquareTerminal from 'lucide-svelte/icons/square-terminal';
+	import Privacy from 'lucide-svelte/icons/shield';
 
 	const data = {
 		navMain: [
 			{
-				title: 'Playground',
-				url: '#',
-				icon: SquareTerminal,
-				isActive: true,
-				items: [
-					{
-						title: 'History',
-						url: '#'
-					},
-					{
-						title: 'Starred',
-						url: '#'
-					},
-					{
-						title: 'Settings',
-						url: '#'
-					}
-				]
+				title: 'Home',
+				url: '/',
+				icon: Home
 			},
 			{
-				title: 'Models',
+				title: 'Games',
 				url: '#',
-				icon: Bot,
+				icon: Gamepad,
 				items: [
 					{
 						title: 'Genesis',
@@ -51,50 +33,14 @@
 				]
 			},
 			{
-				title: 'Documentation',
+				title: 'About Us',
 				url: '#',
-				icon: BookOpen,
-				items: [
-					{
-						title: 'Introduction',
-						url: '#'
-					},
-					{
-						title: 'Get Started',
-						url: '#'
-					},
-					{
-						title: 'Tutorials',
-						url: '#'
-					},
-					{
-						title: 'Changelog',
-						url: '#'
-					}
-				]
+				icon: BookOpen
 			},
 			{
-				title: 'Settings',
+				title: 'Privacy Policy',
 				url: '#',
-				icon: Settings2,
-				items: [
-					{
-						title: 'General',
-						url: '#'
-					},
-					{
-						title: 'Team',
-						url: '#'
-					},
-					{
-						title: 'Billing',
-						url: '#'
-					},
-					{
-						title: 'Limits',
-						url: '#'
-					}
-				]
+				icon: Privacy
 			}
 		]
 	};
