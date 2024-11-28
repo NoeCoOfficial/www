@@ -136,9 +136,6 @@
 
 <script lang="ts">
 	import NavMain from '$lib/components/nav-main.svelte';
-	import NavProjects from '$lib/components/nav-projects.svelte';
-	import NavSecondary from '$lib/components/nav-secondary.svelte';
-	import NavUser from '$lib/components/nav-user.svelte';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import Command from 'lucide-svelte/icons/command';
 	import type { ComponentProps } from 'svelte';
@@ -170,10 +167,5 @@
 	</Sidebar.Header>
 	<Sidebar.Content>
 		<NavMain items={data.navMain} />
-		<NavProjects projects={data.projects} />
-		<NavSecondary items={data.navSecondary} class="mt-auto" />
 	</Sidebar.Content>
-	<Sidebar.Footer>
-		<NavUser user={data.user} />
-	</Sidebar.Footer>
 </Sidebar.Root>
