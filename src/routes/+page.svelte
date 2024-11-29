@@ -25,7 +25,7 @@
 		<h1 class="text-center text-5xl">Making indie games for everyone</h1>
 	</div>
 </div>
-<div class="flex items-center justify-center">
+<div class="flex items-center justify-center p-4">
 	<div class="flex min-w-10 max-w-prose text-xl">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
