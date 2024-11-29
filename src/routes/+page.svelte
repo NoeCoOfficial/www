@@ -19,14 +19,14 @@
 		</Breadcrumb.Root>
 	</div>
 </header>
-<div class="m-4 flex items-center justify-center rounded-xl bg-muted/50 p-2">
+<div class="m-4 flex items-center justify-center rounded-xl p-2">
 	<div class="flex min-h-96 max-w-prose flex-col items-center justify-center gap-8 p-8 md:flex-row">
 		<enhanced:img src="$lib/images/NoeCoLogoTransparent-Cropped.png" alt="" />
 		<h1 class="text-center text-5xl">Making indie games for everyone</h1>
 	</div>
 </div>
 <div class="flex items-center justify-center p-4">
-	<div class="flex min-w-10 max-w-prose text-xl">
+	<div class="flex min-w-10 max-w-prose rounded-xl bg-muted/50 p-4 text-xl">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
