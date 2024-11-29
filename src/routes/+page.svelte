@@ -20,7 +20,7 @@
 	</div>
 </header>
 <div class="m-4 rounded-xl bg-muted/50 p-2">
-	<div class="flex justify-center p-8">
-		<h1 class="size-10">Making indie games for everyone</h1>
+	<div class="flex min-h-96 flex-row items-center justify-center p-8">
+		<h1 class="text-center text-5xl">Making indie games for everyone</h1>
 	</div>
 </div>
