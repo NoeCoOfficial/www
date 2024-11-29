@@ -34,12 +34,12 @@
 			},
 			{
 				title: 'About Us',
-				url: '#',
+				url: '/about',
 				icon: BookOpen
 			},
 			{
 				title: 'Privacy Policy',
-				url: '#',
+				url: '/privacy',
 				icon: Privacy
 			}
 		]
