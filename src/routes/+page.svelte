@@ -20,7 +20,8 @@
 	</div>
 </header>
 <div class="m-4 rounded-xl bg-muted/50 p-2">
-	<div class="flex min-h-96 flex-row items-center justify-center p-8">
+	<div class="flex min-h-96 flex-col items-center justify-center gap-8 p-8 md:flex-row">
+		<enhanced:img src="$lib/images/NoeCoLogoTransparent-Cropped.png" alt="" />
 		<h1 class="text-center text-5xl">Making indie games for everyone</h1>
 	</div>
 </div>
