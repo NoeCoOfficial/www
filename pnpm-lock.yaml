@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@fontsource/schibsted-grotesk':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
         version: 3.3.1(@sveltejs/kit@2.8.5(@sveltejs/vite-plugin-svelte@4.0.2(svelte@5.2.10)(vite@5.4.11))(svelte@5.2.10)(vite@5.4.11))
@@ -225,6 +228,9 @@ packages:
 
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
+
+  '@fontsource/schibsted-grotesk@5.1.0':
+    resolution: {integrity: sha512-F9W9SoyjaipG/X3WRW8lkkKHvh4eL5ytGhVMIdKbiME2KdSquD786pI0fBZMnr4EwKShdT1O+L9sDl0MqkEzwA==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1368,6 +1374,8 @@ snapshots:
       '@floating-ui/utils': 0.2.8
 
   '@floating-ui/utils@0.2.8': {}
+
+  '@fontsource/schibsted-grotesk@5.1.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
