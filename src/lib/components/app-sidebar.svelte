@@ -1,9 +1,7 @@
 <script lang="ts" module>
 	import BookOpen from 'lucide-svelte/icons/book-open';
-	import Bot from 'lucide-svelte/icons/bot';
 	import Home from 'lucide-svelte/icons/home';
 	import Gamepad from 'lucide-svelte/icons/gamepad-2';
-	import Settings2 from 'lucide-svelte/icons/settings-2';
 	import Privacy from 'lucide-svelte/icons/shield';
 
 	const data = {
@@ -41,7 +39,6 @@
 <script lang="ts">
 	import NavMain from '$lib/components/nav-main.svelte';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
-	import Command from 'lucide-svelte/icons/command';
 	import type { ComponentProps } from 'svelte';
 
 	let { ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
