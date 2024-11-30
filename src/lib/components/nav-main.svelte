@@ -26,7 +26,7 @@
 	<Sidebar.GroupLabel>Platform</Sidebar.GroupLabel>
 	<Sidebar.Menu>
 		{#each items as mainItem (mainItem.title)}
-			<Collapsible.Root open={$page.url.pathname == mainItem.url}>
+			<Collapsible.Root open={$page.url.pathname.startsWith(mainItem.url)}>
 				{#snippet child({ props })}
 					<Sidebar.MenuItem {...props}>
 						<Sidebar.MenuButton>
