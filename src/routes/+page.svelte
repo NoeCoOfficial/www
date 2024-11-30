@@ -36,3 +36,4 @@
 		f
 	</div>
 </div>
+<h2 class="p-4 text-center text-4xl">Check out some of our recent games</h2>
