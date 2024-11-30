@@ -19,16 +19,8 @@
 				icon: Gamepad,
 				items: [
 					{
-						title: 'Genesis',
-						url: '#'
-					},
-					{
-						title: 'Explorer',
-						url: '#'
-					},
-					{
-						title: 'Quantum',
-						url: '#'
+						title: 'Expland',
+						url: '/games/expland'
 					}
 				]
 			},
