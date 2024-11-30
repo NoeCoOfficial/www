@@ -23,7 +23,6 @@
 </script>
 
 <Sidebar.Group>
-	<Sidebar.GroupLabel>Platform</Sidebar.GroupLabel>
 	<Sidebar.Menu>
 		{#each items as mainItem (mainItem.title)}
 			<Collapsible.Root open={$page.url.pathname.startsWith(mainItem.url)}>
