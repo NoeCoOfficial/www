@@ -9,7 +9,7 @@
 <Sidebar.Provider>
 	<AppSidebar />
 	<Sidebar.Inset>
-		<div class="w-full flex-shrink-0 overflow-auto rounded-xl" style="height: calc(100vh - 20px)">
+		<div class="maincontent">
 			{@render children()}
 		</div>
 	</Sidebar.Inset>
@@ -18,5 +18,22 @@
 <style>
 	* {
 		font-family: 'Schibsted Grotesk', sans-serif;
+	}
+
+	body {
+		overflow: hidden;
+	}
+
+	.maincontent {
+		width: 100%;
+		flex-shrink: 0;
+		overflow: auto;
+		border-radius: calc(var(--radius) + 4px);
+		height: calc(100vh - 16px);
+	}
+	@media (max-width: 767px) {
+		.maincontent {
+			height: 100vh !important;
+		}
 	}
 </style>
