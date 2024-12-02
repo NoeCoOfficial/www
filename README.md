@@ -1,9 +1,10 @@
 # Noe Co. Website
 
 ### [noeco.xyz](noeco.xyz) (currently does not work)
+
 ---
 
-This is a SvelteKit website using shadcn-svelte (powered by [`sv`](https://github.com/sveltejs/cli).)
+This is a SvelteKit website using shadcn-svelte (powered by [`sv`](https://github.com/sveltejs/cli))
 
 ## Developing
 
