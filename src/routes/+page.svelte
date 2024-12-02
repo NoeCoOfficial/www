@@ -27,13 +27,13 @@
 </div>
 <div class="flex items-center justify-center p-4">
 	<div class="flex min-w-10 max-w-prose rounded-xl bg-muted/50 p-4 text-xl">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-		voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-		non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. aa sadfasfd asd f
-		sa dfa sd faa sadfasfd asd f sa dfa sd faa sadfasfd asd f sa dfa sd faa sadfasfd asd f sa dfa sd
-		f
+		We are a team of three who like making games.
+
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 	</div>
 </div>
 <h2 class="p-4 text-center text-4xl">Check out some of our recent games</h2>
