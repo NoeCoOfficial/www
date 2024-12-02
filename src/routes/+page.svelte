@@ -37,3 +37,6 @@
 	</div>
 </div>
 <h2 class="p-4 text-center text-4xl">Check out some of our recent games</h2>
+<div class="flex items-center justify-center p-4">
+	<div class="flex min-w-10 max-w-prose rounded-xl bg-muted/50 p-4 text-xl">a</div>
+</div>
