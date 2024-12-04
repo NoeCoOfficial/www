@@ -4,6 +4,10 @@
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 </script>
 
+<sveltekit:header>
+	<title>Noe Co.</title>
+</sveltekit:header>
+
 <header class="sticky top-0 flex h-16 w-full shrink-0 items-center gap-2 backdrop-blur-xl">
 	<div class="flex items-center gap-2 px-4">
 		<Sidebar.Trigger class="-ml-1" />
