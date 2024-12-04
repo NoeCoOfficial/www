@@ -27,8 +27,8 @@
 		{#each items as mainItem (mainItem.title)}
 			<Collapsible.Root open={$page.url.pathname.startsWith(mainItem.url)}>
 				{#snippet child({ props })}
-					<Sidebar.MenuItem {...props}>
-						<Sidebar.MenuButton>
+					<Sidebar.MenuItem class="test" {...props}>
+						<Sidebar.MenuButton size="lg">
 							{#snippet tooltipContent()}
 								{mainItem.title}
 							{/snippet}
@@ -42,7 +42,7 @@
 						{#if mainItem.items?.length}
 							<Collapsible.Trigger>
 								{#snippet child({ props })}
-									<Sidebar.MenuAction {...props} class="data-[state=open]:rotate-90">
+									<Sidebar.MenuAction {...props} class="p-4 data-[state=open]:rotate-90">
 										<ChevronRight />
 										<span class="sr-only">Toggle</span>
 									</Sidebar.MenuAction>

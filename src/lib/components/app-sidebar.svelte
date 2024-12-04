@@ -66,7 +66,7 @@
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
 					<Sidebar.MenuItem>
-						<Sidebar.MenuButton>
+						<Sidebar.MenuButton size="lg">
 							<a href="https://github.com/Inglan" target="_blank">
 								<span>Made in Svelte by @Inglan</span>
 							</a>
