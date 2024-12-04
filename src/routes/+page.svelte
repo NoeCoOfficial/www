@@ -2,11 +2,15 @@
 	import * as Breadcrumb from '$lib/components/ui/breadcrumb/index.js';
 	import { Separator } from '$lib/components/ui/separator/index.js';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
+
+	import SvelteSeo from 'svelte-seo';
 </script>
 
-<sveltekit:header>
-	<title>Noe Co.</title>
-</sveltekit:header>
+<SvelteSeo
+	title="Noe Co."
+	description="We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+		et dolore magna aliqua."
+/>
 
 <header class="sticky top-0 flex h-16 w-full shrink-0 items-center gap-2 backdrop-blur-xl">
 	<div class="flex items-center gap-2 px-4">
