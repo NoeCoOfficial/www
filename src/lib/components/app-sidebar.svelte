@@ -61,4 +61,19 @@
 	<Sidebar.Content>
 		<NavMain items={data.navMain} />
 	</Sidebar.Content>
+	<Sidebar.Footer>
+		<Sidebar.Group>
+			<Sidebar.GroupContent>
+				<Sidebar.Menu>
+					<Sidebar.MenuItem>
+						<Sidebar.MenuButton>
+							<a href="https://github.com/Inglan" target="_blank">
+								<span>Made in Svelte by @Inglan</span>
+							</a>
+						</Sidebar.MenuButton>
+					</Sidebar.MenuItem>
+				</Sidebar.Menu>
+			</Sidebar.GroupContent>
+		</Sidebar.Group>
+	</Sidebar.Footer>
 </Sidebar.Root>
