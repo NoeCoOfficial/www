@@ -1,6 +1,6 @@
 # Noe Co. Website
 
-### [noeco.xyz](noeco.xyz) (currently does not work)
+### [noeco.xyz](noeco.xyz)
 
 ---
 
