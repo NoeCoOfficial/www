@@ -60,10 +60,10 @@
 		</Card.Content>
 		<Card.Footer>
 			<div>
-				<Button href="https://github.com/NoeCoOfficial/Expland/releases" target="_blank"
+				<Button href="https://github.com/NoeCoOfficial/Expland/releases" target="_blank" size="lg"
 					>Download</Button
 				>
-				<Button variant="outline" href="/games/expland">More</Button>
+				<Button variant="outline" href="/games/expland" size="lg">More</Button>
 			</div>
 		</Card.Footer>
 	</Card.Root>
