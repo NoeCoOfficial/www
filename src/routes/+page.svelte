@@ -1,7 +1,10 @@
 <script lang="ts">
 	import * as Breadcrumb from '$lib/components/ui/breadcrumb/index.js';
 	import { Separator } from '$lib/components/ui/separator/index.js';
+	import { Button } from '$lib/components/ui/button/index.js';
+
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
+	import * as Card from '$lib/components/ui/card/index.js';
 
 	import SvelteSeo from 'svelte-seo';
 </script>
@@ -44,5 +47,24 @@
 </div>
 <h2 class="p-4 text-center text-4xl">Check out some of our recent games</h2>
 <div class="flex items-center justify-center p-4">
-	<div class="flex min-w-10 max-w-prose rounded-xl bg-muted/50 p-4 text-xl">a</div>
+	<Card.Root class="w-96">
+		<Card.Header>
+			<Card.Title>Expland</Card.Title>
+		</Card.Header>
+		<Card.Content>
+			<p>
+				Face adversity, hardship, enjoy adventure as well, and discover a second chance to fix past
+				mistakes and become a better person in a mysterious world with nightmares and happiness just
+				around the corner.
+			</p>
+		</Card.Content>
+		<Card.Footer>
+			<div>
+				<Button href="https://github.com/NoeCoOfficial/Expland/releases" target="_blank"
+					>Download</Button
+				>
+				<Button variant="outline" href="/games/expland">More</Button>
+			</div>
+		</Card.Footer>
+	</Card.Root>
 </div>
