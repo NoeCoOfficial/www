@@ -31,7 +31,7 @@
 <div class="m-4 flex items-center justify-center rounded-xl p-2">
 	<div class="flex min-h-96 max-w-prose flex-col items-center justify-center gap-8 p-8 md:flex-row">
 		<enhanced:img src="$lib/images/NoeCoLogoTransparent-Cropped.png" alt="" />
-		<h1 class="text-center text-5xl font-bold">Making indie games for everyone.</h1>
+		<h1 class="text-center text-6xl font-bold">Making indie games for everyone</h1>
 	</div>
 </div>
 <div class="flex items-center justify-center p-4">

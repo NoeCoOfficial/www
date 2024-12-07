@@ -8,7 +8,6 @@
 	import SvelteSeo from 'svelte-seo';
 </script>
 
-
 <SvelteSeo
 	title="Expland - Noe Co."
 	description="Face adversity, hardship, enjoy adventure as well, and discover a second chance to fix pastmistakes and become a better person in a mysterious world with nightmares and happiness just around the corner."
@@ -42,16 +41,14 @@
 ></video>
 
 <div
-
-	class="fixed bottom-0 z-10 flex h-fit flex-col gap-4 rounded-t-lg bg-black bg-opacity-50 p-10 backdrop-blur-xl md:bottom-2 md:rounded-lg">
+	class="fixed bottom-0 z-10 flex h-fit flex-col gap-4 rounded-t-lg bg-black bg-opacity-50 p-10 backdrop-blur-xl md:bottom-2 md:rounded-lg"
+>
 	<div class="flex flex-col items-center justify-center gap-4 md:flex-row">
 		<!-- <img src={textlogo_white} alt="Expland" class="h-16 self-center" /> -->
-
 		<enhanced:img
 			src="./textlogo_white.png"
 			alt="Expland"
 			class="h-16 w-52 self-center object-cover"
-			style="transform: scale(1.4); margin-left: 30px;"
 		/>
 		<div class="flex-grow"></div>
 		<Button href="https://github.com/NoeCoOfficial/Expland/releases" target="_blank" size="lg"
@@ -61,7 +58,7 @@
 			href="https://github.com/NoeCoOfficial/Expland/"
 			target="_blank"
 			size="lg"
-			variant="ghost">Source Code</Button
+			variant="ghost">Source</Button
 		>
 	</div>
 	<div class="p-2 md:max-w-prose">
