@@ -26,7 +26,7 @@
 {#if collapsible === 'none'}
 	<div
 		class={cn(
-			'flex h-full w-[--sidebar-width] flex-col bg-sidebar text-sidebar-foreground',
+			'flex h-full w-[--sidebar-width] flex-col bg-sidebar text-sidebar-foreground backdrop-blur-xl',
 			className
 		)}
 		bind:this={ref}
@@ -44,7 +44,7 @@
 		<Sheet.Content
 			data-sidebar="sidebar"
 			data-mobile="true"
-			class="w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
+			class="w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground backdrop-blur-xl [&>button]:hidden"
 			style="--sidebar-width: {SIDEBAR_WIDTH_MOBILE};"
 			{side}
 		>
