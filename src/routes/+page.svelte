@@ -38,12 +38,12 @@
 	<div 
 	class="flex min-w-10 max-w-prose rounded-xl bg-muted/50 p-4 text-xl"
 	style="margin-top: -6rem;">
-	
+
 		We are a team of three who like making games.
-		<br />
+
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 		et dolore magna aliqua.
-		<br />
+
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 		et dolore magna aliqua.
 	</div>
