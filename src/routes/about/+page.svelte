@@ -5,12 +5,6 @@
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 </script>
 
-<SvelteSeo
-	title="About - Noe Co."
-	description="We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-		et dolore magna aliqua."
-/>
-
 <header class="sticky top-0 flex h-16 w-full shrink-0 items-center gap-2 backdrop-blur-xl">
 	<div class="flex items-center gap-2 px-4">
 		<Sidebar.Trigger class="-ml-1" />
@@ -29,7 +23,17 @@
 	</div>
 </header>
 
-<h1 class="text-6xl font-extrabold text-center my-8 underline">Meet the Team</h1>
+<div class="m-4 flex items-center justify-center rounded-xl p-2">
+	<div class="flex min-h-96 max-w-prose flex-col items-center justify-center gap-8 p-8 md:flex-row">
+		<enhanced:img src="$lib/images/NoeCoLogoTransparent-Cropped.png" alt="" />
+		<h1 class="text-center text-7xl font-bold">Meet the Team</h1>
+	</div>
+</div>
+
+<SvelteSeo
+	description="We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+		et dolore magna aliqua."
+/>
 
 <div class="m-4 flex items-center justify-center rounded-xl p-2">
 	<div class="max-w-prose">
