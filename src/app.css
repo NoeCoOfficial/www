@@ -6,6 +6,10 @@
 	font-family: 'Schibsted Grotesk', sans-serif;
 }
 
+* {
+	overflow-y: hidden;
+}
+
 @layer base {
 	/* :root {
 		--background: 0 0% 100%;
