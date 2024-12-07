@@ -42,6 +42,9 @@
 	import type { ComponentProps } from 'svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
 
+	import Fa from 'svelte-fa';
+	import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 	let { ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
 </script>
 
@@ -64,7 +67,7 @@
 	</Sidebar.Content>
 	<Sidebar.Footer>
 		<div class="flex flex-row justify-center">
-			<Button size="icon" variant="ghost"></Button>
+			<Button size="icon" variant="ghost"><Fa icon={faGithub} /></Button>
 		</div>
 		<Sidebar.Group>
 			<Sidebar.GroupContent>
