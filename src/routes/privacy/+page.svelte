@@ -24,3 +24,9 @@
 		</Breadcrumb.Root>
 	</div>
 </header>
+<div class="m-4 flex items-center justify-center rounded-xl p-2">
+	<div class="max-w-prose">
+		We currently don't collect any data, but we may in the future. If we do, we will update this
+		page to reflect that.
+	</div>
+</div>
