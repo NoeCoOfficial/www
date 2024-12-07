@@ -28,3 +28,10 @@
 		</Breadcrumb.Root>
 	</div>
 </header>
+
+<div class="m-4 flex items-center justify-center rounded-xl p-2">
+	<div class="max-w-prose">
+		We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur adipiscing
+		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	</div>
+</div>
