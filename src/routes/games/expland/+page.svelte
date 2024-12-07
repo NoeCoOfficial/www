@@ -49,6 +49,7 @@
 			src="./textlogo_white.png"
 			alt="Expland"
 			class="h-16 w-52 self-center object-cover"
+			style="transform: scale(1.5); margin-left: 2.5rem;" 
 		/>
 		<div class="flex-grow"></div>
 		<Button href="https://github.com/NoeCoOfficial/Expland/releases" target="_blank" size="lg"
