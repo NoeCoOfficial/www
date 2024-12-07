@@ -40,6 +40,7 @@
 	import NavMain from '$lib/components/nav-main.svelte';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import type { ComponentProps } from 'svelte';
+	import { Button } from '$lib/components/ui/button/index.js';
 
 	let { ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
 </script>
@@ -62,6 +63,9 @@
 		<NavMain items={data.navMain} />
 	</Sidebar.Content>
 	<Sidebar.Footer>
+		<div class="flex flex-row justify-center">
+			<Button size="icon" variant="ghost"></Button>
+		</div>
 		<Sidebar.Group>
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
