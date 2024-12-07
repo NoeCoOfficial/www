@@ -5,7 +5,13 @@
 	import * as Breadcrumb from '$lib/components/ui/breadcrumb/index.js';
 	import { Separator } from '$lib/components/ui/separator/index.js';
 	import { Button } from '$lib/components/ui/button/index.js';
+	import SvelteSeo from 'svelte-seo';
 </script>
+
+<SvelteSeo
+	title="Expland - Noe Co."
+	description="Face adversity, hardship, enjoy adventure as well, and discover a second chance to fix pastmistakes and become a better person in a mysterious world with nightmares and happiness just around the corner."
+/>
 
 <header
 	class="sticky top-0 z-10 m-2 flex h-12 w-fit shrink-0 items-center gap-2 rounded-lg bg-black bg-opacity-50 backdrop-blur-xl md:ml-0"
