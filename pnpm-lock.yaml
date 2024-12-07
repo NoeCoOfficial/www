@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fortawesome/free-brands-svg-icons':
+        specifier: ^6.7.1
+        version: 6.7.1
       svelte-fa:
         specifier: ^4.0.3
         version: 4.0.3(svelte@5.8.0)
@@ -579,6 +582,14 @@ packages:
 
   '@fontsource/schibsted-grotesk@5.1.0':
     resolution: {integrity: sha512-F9W9SoyjaipG/X3WRW8lkkKHvh4eL5ytGhVMIdKbiME2KdSquD786pI0fBZMnr4EwKShdT1O+L9sDl0MqkEzwA==}
+
+  '@fortawesome/fontawesome-common-types@6.7.1':
+    resolution: {integrity: sha512-gbDz3TwRrIPT3i0cDfujhshnXO9z03IT1UKRIVi/VEjpNHtSBIP2o5XSm+e816FzzCFEzAxPw09Z13n20PaQJQ==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/free-brands-svg-icons@6.7.1':
+    resolution: {integrity: sha512-nJR76eqPzCnMyhbiGf6X0aclDirZriTPRcFm1YFvuupyJOGwlNF022w3YBqu+yrHRhnKRpzFX+8wJKqiIjWZkA==}
+    engines: {node: '>=6'}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2103,6 +2114,12 @@ snapshots:
   '@floating-ui/utils@0.2.8': {}
 
   '@fontsource/schibsted-grotesk@5.1.0': {}
+
+  '@fortawesome/fontawesome-common-types@6.7.1': {}
+
+  '@fortawesome/free-brands-svg-icons@6.7.1':
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.7.1
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

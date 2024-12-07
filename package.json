@@ -37,6 +37,7 @@
 		"wrangler": "^3.92.0"
 	},
 	"dependencies": {
+		"@fortawesome/free-brands-svg-icons": "^6.7.1",
 		"svelte-fa": "^4.0.3"
 	}
 }
