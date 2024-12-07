@@ -58,7 +58,7 @@
 			href="https://github.com/NoeCoOfficial/Expland/"
 			target="_blank"
 			size="lg"
-			variant="ghost">Source</Button
+			variant="ghost">Source code</Button
 		>
 	</div>
 	<div class="p-2 md:max-w-prose">
