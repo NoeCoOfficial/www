@@ -28,7 +28,7 @@
 			<Collapsible.Root open={$page.url.pathname.startsWith(mainItem.url)}>
 				{#snippet child({ props })}
 					<Sidebar.MenuItem class="test" {...props}>
-						<Sidebar.MenuButton size="lg">
+						<Sidebar.MenuButton size="lg" isActive={$page.url.pathname == mainItem.url}>
 							{#snippet tooltipContent()}
 								{mainItem.title}
 							{/snippet}
@@ -52,7 +52,10 @@
 								<Sidebar.MenuSub>
 									{#each mainItem.items as subItem (subItem.title)}
 										<Sidebar.MenuSubItem>
-											<Sidebar.MenuSubButton href={subItem.url}>
+											<Sidebar.MenuSubButton
+												href={subItem.url}
+												isActive={$page.url.pathname == subItem.url}
+											>
 												<span>{subItem.title}</span>
 											</Sidebar.MenuSubButton>
 										</Sidebar.MenuSubItem>
