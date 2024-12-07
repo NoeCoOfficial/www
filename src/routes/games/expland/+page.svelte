@@ -1,6 +1,5 @@
 <script lang="ts">
 	import preview from './preview.mp4';
-	import textlogo_white from './textlogo_white.png';
 
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import * as Breadcrumb from '$lib/components/ui/breadcrumb/index.js';
