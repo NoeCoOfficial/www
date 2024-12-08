@@ -120,3 +120,12 @@
 		</Drawer.Footer>
 	</Drawer.Content>
 </Drawer.Root>
+
+<Dialog.Root bind:open={creditDialogOpen}>
+	<Dialog.Content>
+		<Dialog.Header>
+			<Dialog.Title>Made by Ingo (and other credits)</Dialog.Title>
+			<CreditAndStack />
+		</Dialog.Header>
+	</Dialog.Content>
+</Dialog.Root>
