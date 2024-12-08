@@ -41,9 +41,9 @@
 ></video>
 
 <div
-	class="fixed bottom-0 z-10 flex h-fit flex-col gap-4 rounded-t-lg bg-black bg-opacity-50 p-10 backdrop-blur-xl md:bottom-2 md:max-w-screen-md md:rounded-lg"
+	class="fixed bottom-0 z-10 flex h-fit flex-col gap-4 rounded-t-lg bg-black bg-opacity-50 p-10 backdrop-blur-xl lg:bottom-2 lg:max-w-screen-md lg:rounded-lg"
 >
-	<div class="flex flex-col items-center justify-center gap-4 md:flex-row">
+	<div class="flex flex-col items-center justify-center gap-4 lg:flex-row">
 		<!-- <img src={textlogo_white} alt="Expland" class="h-16 self-center" /> -->
 		<enhanced:img
 			src="./textlogo_white.png"
