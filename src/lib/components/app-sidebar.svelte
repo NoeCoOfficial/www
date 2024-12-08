@@ -42,6 +42,8 @@
 	import type { ComponentProps } from 'svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import * as Drawer from '$lib/components/ui/drawer/index.js';
+	import CreditAndStack from '$lib/components/credit-and-stack.svelte';
+	import * as Dialog from '$lib/components/ui/dialog/index.js';
 
 	import Fa from 'svelte-fa';
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -96,7 +98,7 @@
 				<Sidebar.Menu>
 					<Sidebar.MenuItem>
 						<Sidebar.MenuButton size="lg" onclick={() => (creditDialogOpen = true)}>
-							<span class="w-full text-center">Made by @Inglan</span></Sidebar.MenuButton
+							<span class="w-full text-center">Made by Ingo</span></Sidebar.MenuButton
 						>
 					</Sidebar.MenuItem>
 				</Sidebar.Menu>
@@ -108,9 +110,10 @@
 <Drawer.Root bind:open={creditDialogOpen}>
 	<Drawer.Content>
 		<Drawer.Header>
-			<Drawer.Title>Are you sure absolutely sure?</Drawer.Title>
-			<Drawer.Description>This action cannot be undone.</Drawer.Description>
+			<Drawer.Title>Made by Ingo</Drawer.Title>
+			<CreditAndStack />
 		</Drawer.Header>
+
 		<Drawer.Footer>
 			<Button class="w-full" variant="outline" onclick={() => (creditDialogOpen = false)}>OK</Button
 			>
