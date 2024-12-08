@@ -45,6 +45,7 @@
 	import Fa from 'svelte-fa';
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 	import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+	import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 	import Mail from 'lucide-svelte/icons/mail';
 
 	let { ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
@@ -74,6 +75,14 @@
 			>
 			<Button size="icon" variant="ghost" href="https://discord.gg/QNgcKCAJn3" target="_blank">
 				<Fa icon={faDiscord} /></Button
+			>
+			<Button
+				size="icon"
+				variant="ghost"
+				href="https://www.youtube.com/@noeco.official"
+				target="_blank"
+			>
+				<Fa icon={faYoutube} /></Button
 			>
 			<Button size="icon" variant="ghost" href="mailto:noeco.official@gmail.com">
 				<Mail></Mail>
