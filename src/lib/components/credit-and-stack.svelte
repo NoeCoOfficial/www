@@ -5,6 +5,7 @@
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 	import Globe from 'lucide-svelte/icons/globe';
 	import Mail from 'lucide-svelte/icons/mail';
+	import * as Accordion from '$lib/components/ui/accordion/index.js';
 </script>
 
 <span>
@@ -32,3 +33,32 @@
 		</Button>
 	</div>
 </span>
+
+<Accordion.Root type="single">
+	<Accordion.Item value="item-1">
+		<Accordion.Trigger>Tech Stack</Accordion.Trigger>
+		<Accordion.Content>
+			This website is written in <a href="https://svelte.dev/" target="_blank" class="underline"
+				>Svelte</a
+			>
+			for the frontend and uses
+			<a href="https://kit.svelte.dev/" target="_blank" class="underline">SvelteKit</a>
+			for the other website related stuff like routing. The website uses
+			<a href="https://tailwindcss.com/" target="_blank" class="underline">TailwindCSS</a>
+			for styling, and components from
+			<a href="https://shadcn.dev/" target="_blank" class="underline">shadcn</a>. The website is
+			hosted on
+			<a href="https://www.cloudflare.com/" target="_blank" class="underline">Cloudflare</a> pages
+			and the source code is on
+			<a href="https://github.com/NoeCoOfficial/www" target="_blank" class="underline">GitHub</a>. I
+			need to start code testing but I am running some tests with
+			<a href="https://playwright.dev/" target="_blank" class="underline">Playwright</a>
+			on
+			<a href="https://github.com/features/actions" target="_blank" class="underline"
+				>GitHub Actions</a
+			>. GitHub's
+			<a href="https://github.com/dependabot" target="_blank" class="underline">dependabot</a> keeps
+			the dependencies up to date.
+		</Accordion.Content>
+	</Accordion.Item>
+</Accordion.Root>
