@@ -35,17 +35,14 @@
 	</div>
 </div>
 <div class="flex items-center justify-center p-4">
-	<div 
-	class="flex min-w-10 max-w-prose rounded-xl bg-muted/50 p-4 text-xl"
-	style="margin-top: -6rem;">
-
-		We are a team of three who like making games.
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-		et dolore magna aliqua.
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-		et dolore magna aliqua.
+	<div
+		class="flex min-w-10 max-w-prose rounded-xl bg-muted/50 p-4 text-xl"
+		style="margin-top: -6rem;"
+	>
+		We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur adipiscing
+		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+		amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+		aliqua.
 	</div>
 </div>
 <h2 class="p-4 text-center text-4xl">Check out some of our recent games</h2>
