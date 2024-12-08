@@ -24,8 +24,8 @@
 		</Breadcrumb.Root>
 	</div>
 </header>
-<div class="flex justify-center p-2">
-	<div class="max-w-screen-lg">
+<div class="flex justify-center">
+	<div class="max-w-screen-lg p-2">
 		We currently don't collect any data, but we may in the future. If we do, we will update this
 		page to reflect that.
 	</div>
