@@ -67,7 +67,16 @@
 			<Sidebar.MenuItem>
 				<Sidebar.MenuButton size="lg" class="h-fit">
 					{#snippet child({ props })}
-						<a href="/" aria-label="Logo" {...props}>
+						<a
+							href="/"
+							aria-label="Logo"
+							onclick={() => {
+								if (sidebar.isMobile) {
+									sidebar.toggle();
+								}
+							}}
+							{...props}
+						>
 							<enhanced:img src="$lib/images/NoeCoLogoTransparent-Cropped.png" alt="" />
 						</a>
 					{/snippet}
