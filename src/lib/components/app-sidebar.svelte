@@ -41,12 +41,15 @@
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import type { ComponentProps } from 'svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
+	import * as Drawer from '$lib/components/ui/drawer/index.js';
 
 	import Fa from 'svelte-fa';
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 	import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 	import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 	import Mail from 'lucide-svelte/icons/mail';
+
+	let creditDialogOpen = $state(false);
 
 	let { ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
 </script>
@@ -92,14 +95,26 @@
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
 					<Sidebar.MenuItem>
-						<Sidebar.MenuButton size="lg">
-							<a href="https://github.com/Inglan" target="_blank">
-								<span>Made in Svelte by @Inglan</span>
-							</a>
-						</Sidebar.MenuButton>
+						<Sidebar.MenuButton size="lg" onclick={() => (creditDialogOpen = true)}>
+							<span class="w-full text-center">Made by @Inglan</span></Sidebar.MenuButton
+						>
 					</Sidebar.MenuItem>
 				</Sidebar.Menu>
 			</Sidebar.GroupContent>
 		</Sidebar.Group>
 	</Sidebar.Footer>
 </Sidebar.Root>
+
+<Drawer.Root bind:open={creditDialogOpen}>
+	<Drawer.Content>
+		<Drawer.Header>
+			<Drawer.Title>Are you sure absolutely sure?</Drawer.Title>
+			<Drawer.Description>This action cannot be undone.</Drawer.Description>
+		</Drawer.Header>
+		<Drawer.Footer>
+			<Drawer.Close>
+				<Button class="w-full" variant="outline">OK</Button>
+			</Drawer.Close>
+		</Drawer.Footer>
+	</Drawer.Content>
+</Drawer.Root>
