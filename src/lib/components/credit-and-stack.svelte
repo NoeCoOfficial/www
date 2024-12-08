@@ -35,7 +35,7 @@
 </span>
 
 <Accordion.Root type="single">
-	<Accordion.Item value="item-1">
+	<Accordion.Item value="techstack">
 		<Accordion.Trigger>Tech Stack</Accordion.Trigger>
 		<Accordion.Content>
 			This website is written in <a href="https://svelte.dev/" target="_blank" class="underline"
@@ -61,7 +61,7 @@
 			the dependencies up to date.
 		</Accordion.Content>
 	</Accordion.Item>
-	<Accordion.Item value="item-2">
+	<Accordion.Item value="licences">
 		<Accordion.Trigger>Licences</Accordion.Trigger>
 		<Accordion.Content></Accordion.Content>
 	</Accordion.Item>
