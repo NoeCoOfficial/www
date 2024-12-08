@@ -61,4 +61,8 @@
 			the dependencies up to date.
 		</Accordion.Content>
 	</Accordion.Item>
+	<Accordion.Item value="item-2">
+		<Accordion.Trigger>Licences</Accordion.Trigger>
+		<Accordion.Content></Accordion.Content>
+	</Accordion.Item>
 </Accordion.Root>
