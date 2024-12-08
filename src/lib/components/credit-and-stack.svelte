@@ -8,7 +8,7 @@
 	import * as Accordion from '$lib/components/ui/accordion/index.js';
 </script>
 
-<div class="h-[calc(100vh-500px)] w-full overflow-auto">
+<div class="max-h-[calc(100vh-500px)] w-full overflow-auto">
 	<span>
 		I built this website in my free time to learn SvelteKit and for my friend Seb, who enjoys game
 		development but not web development. This site is open source and available on GitHub. If you
