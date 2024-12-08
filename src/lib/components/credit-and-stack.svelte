@@ -63,6 +63,13 @@
 	</Accordion.Item>
 	<Accordion.Item value="licences">
 		<Accordion.Trigger>Licences</Accordion.Trigger>
-		<Accordion.Content></Accordion.Content>
+		<Accordion.Content>
+			<Accordion.Root type="single">
+				<Accordion.Item value="font">
+					<Accordion.Trigger>Font</Accordion.Trigger>
+					<Accordion.Content></Accordion.Content></Accordion.Item
+				></Accordion.Root
+			>
+		</Accordion.Content>
 	</Accordion.Item>
 </Accordion.Root>
