@@ -3,6 +3,8 @@
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import ChevronRight from 'lucide-svelte/icons/chevron-right';
 	import { page } from '$app/stores';
+	import { useSidebar } from '$lib/components/ui/sidebar/index.js';
+	const sidebar = useSidebar();
 
 	let {
 		items
@@ -28,7 +30,15 @@
 			<Collapsible.Root open={$page.url.pathname.startsWith(mainItem.url)}>
 				{#snippet child({ props })}
 					<Sidebar.MenuItem class="test" {...props}>
-						<Sidebar.MenuButton size="lg" isActive={$page.url.pathname == mainItem.url}>
+						<Sidebar.MenuButton
+							size="lg"
+							isActive={$page.url.pathname == mainItem.url}
+							onclick={() => {
+								if (sidebar.isMobile) {
+									sidebar.toggle();
+								}
+							}}
+						>
 							{#snippet tooltipContent()}
 								{mainItem.title}
 							{/snippet}
@@ -53,6 +63,11 @@
 									{#each mainItem.items as subItem (subItem.title)}
 										<Sidebar.MenuSubItem>
 											<Sidebar.MenuSubButton
+												onclick={() => {
+													if (sidebar.isMobile) {
+														sidebar.toggle();
+													}
+												}}
 												href={subItem.url}
 												isActive={$page.url.pathname == subItem.url}
 											>
