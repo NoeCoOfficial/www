@@ -42,9 +42,13 @@
 </div>
 
 <div class="flex items-center justify-center p-4">
-	<div class="flex min-w-10 max-w-prose rounded-xl bg-muted/50 p-4 text-xl">
-		We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur adipiscing
-		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	<div class="flex items-center justify-center p-4">
+		<Card.Root class="w-full max-w-prose">
+			<Card.Content>
+				We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur
+				adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</Card.Content></Card.Root
+		>
 	</div>
 </div>
 
