@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	font-family: 'Schibsted Grotesk', sans-serif;
+}
+
 @layer base {
 	/* :root {
 		--background: 0 0% 100%;
@@ -46,7 +50,7 @@
 		--input: 0 0% 14.9%;
 		--ring: 0 72.2% 50.6%;
 		--radius: 0.75rem;
-		--sidebar-background: 240 5.9% 10%;
+		--sidebar-background: 240, 6%, 10%, 0.75;
 		--sidebar-foreground: 240 4.8% 95.9%;
 		--sidebar-primary: 224.3 76.3% 48%;
 		--sidebar-primary-foreground: 0 0% 100%;
@@ -64,4 +68,8 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+}
+
+picture {
+	width: fit-content;
 }

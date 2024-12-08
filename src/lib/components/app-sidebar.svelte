@@ -40,7 +40,24 @@
 	import NavMain from '$lib/components/nav-main.svelte';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import type { ComponentProps } from 'svelte';
+	import { Button } from '$lib/components/ui/button/index.js';
+	import * as Drawer from '$lib/components/ui/drawer/index.js';
+	import CreditAndStack from '$lib/components/credit-and-stack.svelte';
+	import * as Dialog from '$lib/components/ui/dialog/index.js';
+	import { MediaQuery } from 'runed';
+	import { useSidebar } from '$lib/components/ui/sidebar/index.js';
+	const sidebar = useSidebar();
 
+	import Fa from 'svelte-fa';
+	import { faGithub } from '@fortawesome/free-brands-svg-icons';
+	import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+	import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+	import Mail from 'lucide-svelte/icons/mail';
+	import { IsMobile } from '$lib/hooks/is-mobile.svelte';
+
+	let creditDialogOpen = $state(false);
+
+	const isDesktop = new MediaQuery('(min-width: 768px)');
 	let { ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
 </script>
 
@@ -50,7 +67,16 @@
 			<Sidebar.MenuItem>
 				<Sidebar.MenuButton size="lg" class="h-fit">
 					{#snippet child({ props })}
-						<a href="/" aria-label="Logo" {...props}>
+						<a
+							href="/"
+							aria-label="Logo"
+							onclick={() => {
+								if (sidebar.isMobile) {
+									sidebar.toggle();
+								}
+							}}
+							{...props}
+						>
 							<enhanced:img src="$lib/images/NoeCoLogoTransparent-Cropped.png" alt="" />
 						</a>
 					{/snippet}
@@ -62,18 +88,69 @@
 		<NavMain items={data.navMain} />
 	</Sidebar.Content>
 	<Sidebar.Footer>
+		<div class="flex flex-row justify-center gap-1">
+			<Button size="icon" variant="ghost" href="https://github.com/NoeCoOfficial" target="_blank">
+				<Fa icon={faGithub} /></Button
+			>
+			<Button size="icon" variant="ghost" href="https://discord.gg/QNgcKCAJn3" target="_blank">
+				<Fa icon={faDiscord} /></Button
+			>
+			<Button
+				size="icon"
+				variant="ghost"
+				href="https://www.youtube.com/@noeco.official"
+				target="_blank"
+			>
+				<Fa icon={faYoutube} /></Button
+			>
+			<Button size="icon" variant="ghost" href="mailto:noeco.official@gmail.com">
+				<Mail></Mail>
+			</Button>
+		</div>
 		<Sidebar.Group>
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
 					<Sidebar.MenuItem>
-						<Sidebar.MenuButton size="lg">
-							<a href="https://github.com/Inglan" target="_blank">
-								<span>Made in Svelte by @Inglan</span>
-							</a>
-						</Sidebar.MenuButton>
+						<Sidebar.MenuButton
+							size="lg"
+							onclick={() => {
+								creditDialogOpen = true;
+								if (sidebar.isMobile) {
+									sidebar.toggle();
+								}
+							}}
+						>
+							<span class="w-full text-center">Made by Ingo</span></Sidebar.MenuButton
+						>
 					</Sidebar.MenuItem>
 				</Sidebar.Menu>
 			</Sidebar.GroupContent>
 		</Sidebar.Group>
 	</Sidebar.Footer>
 </Sidebar.Root>
+
+{#if isDesktop.matches}
+	<Dialog.Root bind:open={creditDialogOpen}>
+		<Dialog.Content>
+			<Dialog.Header>
+				<Dialog.Title>Made by Ingo (and other credits)</Dialog.Title>
+				<CreditAndStack />
+			</Dialog.Header>
+		</Dialog.Content>
+	</Dialog.Root>
+{:else}
+	<Drawer.Root bind:open={creditDialogOpen}>
+		<Drawer.Content>
+			<Drawer.Header>
+				<Drawer.Title>Made by Ingo (and other credits)</Drawer.Title>
+				<CreditAndStack />
+			</Drawer.Header>
+
+			<Drawer.Footer>
+				<Button class="w-full" variant="outline" onclick={() => (creditDialogOpen = false)}
+					>OK</Button
+				>
+			</Drawer.Footer>
+		</Drawer.Content>
+	</Drawer.Root>
+{/if}

@@ -12,9 +12,3 @@
 		{@render children()}
 	</Sidebar.Inset>
 </Sidebar.Provider>
-
-<style>
-	* {
-		font-family: 'Schibsted Grotesk', sans-serif;
-	}
-</style>
