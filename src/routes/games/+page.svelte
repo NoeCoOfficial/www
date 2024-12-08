@@ -26,25 +26,38 @@
 		</Breadcrumb.Root>
 	</div>
 </header>
-<div class="flex items-center justify-center p-4">
-	<Card.Root class="w-full max-w-prose">
-		<Card.Header>
-			<Card.Title>Expland</Card.Title>
-		</Card.Header>
-		<Card.Content>
-			<p>
-				Face adversity, hardship, enjoy adventure as well, and discover a second chance to fix past
-				mistakes and become a better person in a mysterious world with nightmares and happiness just
-				around the corner.
-			</p>
-		</Card.Content>
-		<Card.Footer>
-			<div>
-				<Button href="https://github.com/NoeCoOfficial/Expland/releases" target="_blank" size="lg"
-					>Download</Button
-				>
-				<Button variant="outline" href="/games/expland" size="lg">More</Button>
-			</div>
-		</Card.Footer>
-	</Card.Root>
+
+<div class="flex items-center justify-center">
+	<div class="flex min-h-48 max-w-prose flex-col items-end justify-center gap-8 p-4 md:flex-row">
+		<h1 class="text-center text-[40px] font-bold">Games</h1>
+	</div>
+</div>
+
+<div class="flex justify-center">
+	<div class="flex max-w-screen-lg flex-col items-start justify-center gap-2 p-2 md:flex-row">
+		<Card.Root class="flex h-full w-full max-w-96 flex-col">
+			<Card.Header>
+				<Card.Title>Expland</Card.Title>
+			</Card.Header>
+			<Card.Content>
+				<p>
+					Face adversity, hardship, enjoy adventure as well, and discover a second chance to fix
+					past mistakes and become a better person in a mysterious world with nightmares and
+					happiness just around the corner.
+				</p>
+			</Card.Content>
+			<div class="flex-grow"></div>
+			<Card.Footer>
+				<div class="flex flex-grow flex-row justify-center gap-1 [&>*:first-child]:flex-grow">
+					<Button
+						class=""
+						href="https://github.com/NoeCoOfficial/Expland/releases"
+						target="_blank"
+						size="lg">Download</Button
+					>
+					<Button class="" variant="outline" href="/games/expland" size="lg">More</Button>
+				</div>
+			</Card.Footer>
+		</Card.Root>
+	</div>
 </div>

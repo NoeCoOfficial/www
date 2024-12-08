@@ -49,7 +49,7 @@
 
 <div class="flex justify-center">
 	<div class="flex max-w-screen-lg flex-col items-start justify-center gap-2 p-2 md:flex-row">
-		<Card.Root class="flex h-full w-full flex-col">
+		<Card.Root class="flex h-full w-full max-w-96 flex-col">
 			<Card.Header>
 				<Card.Title>Expland</Card.Title>
 			</Card.Header>
