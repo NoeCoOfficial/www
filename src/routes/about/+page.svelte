@@ -36,8 +36,8 @@
 	</div>
 </header>
 
-<div class="m-4 flex items-center justify-center rounded-xl p-2">
-	<div class="flex min-h-48 max-w-prose flex-col items-end justify-center gap-8 p-8 md:flex-row">
+<div class="flex items-center justify-center">
+	<div class="flex min-h-48 max-w-prose flex-col items-end justify-center gap-8 p-4 md:flex-row">
 		<h1 class="text-center text-[40px] font-bold">Meet the Team</h1>
 	</div>
 </div>
