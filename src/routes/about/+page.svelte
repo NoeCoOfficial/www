@@ -9,6 +9,7 @@
 
 	import Fa from 'svelte-fa';
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
+	import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <SvelteSeo
@@ -111,12 +112,16 @@
 			</Card.Content>
 			<div class="flex-grow"></div>
 			<Card.Footer>
-				<!-- example of social button: -->
-				<!-- <div class="flex flex-row justify-center gap-1">
-					<Button size="icon" variant="ghost" href="https://github.com/GoatsAreTB" target="_blank">
-						<Fa icon={faGithub} /></Button
+				<div class="flex flex-row justify-center gap-1">
+					<Button
+						size="icon"
+						variant="ghost"
+						href="https://www.youtube.com/@BBIFFIY"
+						target="_blank"
 					>
-				</div> -->
+						<Fa icon={faYoutube} /></Button
+					>
+				</div>
 			</Card.Footer>
 		</Card.Root>
 	</div>
