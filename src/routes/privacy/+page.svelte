@@ -24,6 +24,13 @@
 		</Breadcrumb.Root>
 	</div>
 </header>
+
+<div class="flex items-center justify-center">
+	<div class="flex min-h-48 max-w-prose flex-col items-end justify-center gap-8 p-4 md:flex-row">
+		<h1 class="text-center text-[40px] font-bold">Privacy Policy</h1>
+	</div>
+</div>
+
 <div class="flex justify-center">
 	<div class="max-w-screen-lg p-2">
 		We currently don't collect any data, but we may in the future. If we do, we will update this
