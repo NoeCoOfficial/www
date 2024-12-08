@@ -44,6 +44,7 @@
 	import * as Drawer from '$lib/components/ui/drawer/index.js';
 	import CreditAndStack from '$lib/components/credit-and-stack.svelte';
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
+	import { MediaQuery } from 'runed';
 
 	import Fa from 'svelte-fa';
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -53,6 +54,7 @@
 
 	let creditDialogOpen = $state(false);
 
+	const isDesktop = new MediaQuery('(min-width: 768px)');
 	let { ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
 </script>
 
@@ -107,25 +109,28 @@
 	</Sidebar.Footer>
 </Sidebar.Root>
 
-<Drawer.Root bind:open={creditDialogOpen}>
-	<Drawer.Content>
-		<Drawer.Header>
-			<Drawer.Title>Made by Ingo (and other credits)</Drawer.Title>
-			<CreditAndStack />
-		</Drawer.Header>
+{#if isDesktop.matches}
+	<Dialog.Root bind:open={creditDialogOpen}>
+		<Dialog.Content>
+			<Dialog.Header>
+				<Dialog.Title>Made by Ingo (and other credits)</Dialog.Title>
+				<CreditAndStack />
+			</Dialog.Header>
+		</Dialog.Content>
+	</Dialog.Root>
+{:else}
+	<Drawer.Root bind:open={creditDialogOpen}>
+		<Drawer.Content>
+			<Drawer.Header>
+				<Drawer.Title>Made by Ingo (and other credits)</Drawer.Title>
+				<CreditAndStack />
+			</Drawer.Header>
 
-		<Drawer.Footer>
-			<Button class="w-full" variant="outline" onclick={() => (creditDialogOpen = false)}>OK</Button
-			>
-		</Drawer.Footer>
-	</Drawer.Content>
-</Drawer.Root>
-
-<Dialog.Root bind:open={creditDialogOpen}>
-	<Dialog.Content>
-		<Dialog.Header>
-			<Dialog.Title>Made by Ingo (and other credits)</Dialog.Title>
-			<CreditAndStack />
-		</Dialog.Header>
-	</Dialog.Content>
-</Dialog.Root>
+			<Drawer.Footer>
+				<Button class="w-full" variant="outline" onclick={() => (creditDialogOpen = false)}
+					>OK</Button
+				>
+			</Drawer.Footer>
+		</Drawer.Content>
+	</Drawer.Root>
+{/if}
