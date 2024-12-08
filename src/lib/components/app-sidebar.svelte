@@ -110,7 +110,7 @@
 <Drawer.Root bind:open={creditDialogOpen}>
 	<Drawer.Content>
 		<Drawer.Header>
-			<Drawer.Title>Made by Ingo</Drawer.Title>
+			<Drawer.Title>Made by Ingo (and other credits)</Drawer.Title>
 			<CreditAndStack />
 		</Drawer.Header>
 
