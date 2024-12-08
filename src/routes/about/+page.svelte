@@ -3,6 +3,12 @@
 	import * as Breadcrumb from '$lib/components/ui/breadcrumb/index.js';
 	import { Separator } from '$lib/components/ui/separator/index.js';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
+	import * as Card from '$lib/components/ui/card/index.js';
+
+	import { Button } from '$lib/components/ui/button/index.js';
+
+	import Fa from 'svelte-fa';
+	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <SvelteSeo
@@ -42,7 +48,7 @@
 	</div>
 </div>
 
-<div class="flex justify-center">
+<div class="flex justify-center p-2">
 	<div class="m-4 flex max-w-screen-lg flex-col items-start justify-center gap-6 rounded-xl p-4">
 		<div>
 			<h2 class="scroll-m-20 text-2xl font-semibold tracking-tight text-white">Sebastian Suciu</h2>
@@ -71,5 +77,74 @@
 				loves making pixel art and music for the team. He holds skills in Pixilart and Soundtrap.
 			</p>
 		</div>
+	</div>
+</div>
+
+<div class="flex justify-center">
+	<div class="flex max-w-screen-lg flex-row items-start justify-center gap-2 p-2">
+		<Card.Root class="flex h-full w-96 flex-col">
+			<Card.Header>
+				<Card.Title>Sebastian Suciu</Card.Title>
+			</Card.Header>
+			<Card.Content>
+				<p>
+					Seb is a 14 year old in high school who loves messing around with computers and
+					programming languages. His favorite video game is Geometry Dash, and the engine he uses to
+					make games is Godot and Blender. He has been making games and projects for over 2 years,
+					and he has been loving every second of it. He enjoys playing Basketball and sport and is
+					skilled in GDScript, Python and C++.
+				</p>
+			</Card.Content>
+			<div class="flex-grow"></div>
+			<Card.Footer>
+				<div class="flex flex-row justify-center gap-1">
+					<Button size="icon" variant="ghost" href="https://github.com/sebashtioon" target="_blank">
+						<Fa icon={faGithub} /></Button
+					>
+				</div>
+			</Card.Footer>
+		</Card.Root>
+		<Card.Root class="flex h-full w-96 flex-col">
+			<Card.Header>
+				<Card.Title>Tristan Taylor</Card.Title>
+			</Card.Header>
+			<Card.Content>
+				<p>
+					Tristan is 14 years old and unlike Seb, enjoys making game assets rather than coding, as
+					well as being skilled in Blender, Soundtrap and paperwork. Tristan is our main source of
+					ideas for the team. He is great at making lore, storyboarding and game planning. His
+					favorite video game is Subnautica.
+				</p>
+			</Card.Content>
+			<div class="flex-grow"></div>
+			<Card.Footer>
+				<div class="flex flex-row justify-center gap-1">
+					<Button size="icon" variant="ghost" href="https://github.com/GoatsAreTB" target="_blank">
+						<Fa icon={faGithub} /></Button
+					>
+				</div>
+			</Card.Footer>
+		</Card.Root>
+		<Card.Root class="flex h-full w-96 flex-col">
+			<Card.Header>
+				<Card.Title>Erik Miller</Card.Title>
+			</Card.Header>
+			<Card.Content>
+				<p>
+					Erik is a talented artist and animator, creating visually stunning and immersive game
+					environments. They add the finishing touch to the team's creations. Erik is 14 years old
+					and loves making pixel art and music for the team. He holds skills in Pixilart and
+					Soundtrap.
+				</p>
+			</Card.Content>
+			<div class="flex-grow"></div>
+			<Card.Footer>
+				<div class="flex flex-row justify-center gap-1">
+					<Button size="icon" variant="ghost" href="https://github.com/GoatsAreTB" target="_blank">
+						<Fa icon={faGithub} /></Button
+					>
+				</div>
+			</Card.Footer>
+		</Card.Root>
 	</div>
 </div>
