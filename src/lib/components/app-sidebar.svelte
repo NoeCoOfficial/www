@@ -112,9 +112,8 @@
 			<Drawer.Description>This action cannot be undone.</Drawer.Description>
 		</Drawer.Header>
 		<Drawer.Footer>
-			<Drawer.Close>
-				<Button class="w-full" variant="outline">OK</Button>
-			</Drawer.Close>
+			<Button class="w-full" variant="outline" onclick={() => (creditDialogOpen = false)}>OK</Button
+			>
 		</Drawer.Footer>
 	</Drawer.Content>
 </Drawer.Root>
