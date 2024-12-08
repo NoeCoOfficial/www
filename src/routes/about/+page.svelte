@@ -54,8 +54,8 @@
 </div>
 
 <div class="flex justify-center">
-	<div class="flex max-w-screen-lg flex-row items-start justify-center gap-2 p-2">
-		<Card.Root class="flex h-full w-96 flex-col">
+	<div class="flex max-w-screen-lg flex-col items-start justify-center gap-2 p-2 md:flex-row">
+		<Card.Root class="flex h-full w-full flex-col">
 			<Card.Header>
 				<Card.Title>Sebastian Suciu</Card.Title>
 			</Card.Header>
@@ -77,7 +77,7 @@
 				</div>
 			</Card.Footer>
 		</Card.Root>
-		<Card.Root class="flex h-full w-96 flex-col">
+		<Card.Root class="flex h-full w-full flex-col">
 			<Card.Header>
 				<Card.Title>Tristan Taylor</Card.Title>
 			</Card.Header>
@@ -98,7 +98,7 @@
 				</div>
 			</Card.Footer>
 		</Card.Root>
-		<Card.Root class="flex h-full w-96 flex-col">
+		<Card.Root class="flex h-full w-full flex-col">
 			<Card.Header>
 				<Card.Title>Erik Miller</Card.Title>
 			</Card.Header>
