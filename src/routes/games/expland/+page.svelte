@@ -41,7 +41,7 @@
 ></video>
 
 <div
-	class="fixed bottom-0 z-10 flex h-fit flex-col gap-4 rounded-t-lg bg-black bg-opacity-50 p-10 backdrop-blur-xl md:bottom-2 md:rounded-lg"
+	class="fixed bottom-0 z-10 flex h-fit flex-col gap-4 rounded-t-lg bg-black bg-opacity-50 p-10 backdrop-blur-xl md:bottom-2 md:max-w-screen-md md:rounded-lg"
 >
 	<div class="flex flex-col items-center justify-center gap-4 md:flex-row">
 		<!-- <img src={textlogo_white} alt="Expland" class="h-16 self-center" /> -->
@@ -61,7 +61,7 @@
 			variant="ghost">Source code</Button
 		>
 	</div>
-	<div class="p-2 md:max-w-prose">
+	<div class="p-2">
 		Face adversity, hardship, enjoy adventure as well, and discover a second chance to fix past
 		mistakes and become a better person in a mysterious world with nightmares and happiness just
 		around the corner.
