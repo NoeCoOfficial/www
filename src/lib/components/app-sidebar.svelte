@@ -45,12 +45,15 @@
 	import CreditAndStack from '$lib/components/credit-and-stack.svelte';
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
 	import { MediaQuery } from 'runed';
+	import { useSidebar } from '$lib/components/ui/sidebar/index.js';
+	const sidebar = useSidebar();
 
 	import Fa from 'svelte-fa';
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 	import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 	import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 	import Mail from 'lucide-svelte/icons/mail';
+	import { IsMobile } from '$lib/hooks/is-mobile.svelte';
 
 	let creditDialogOpen = $state(false);
 
@@ -99,7 +102,15 @@
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
 					<Sidebar.MenuItem>
-						<Sidebar.MenuButton size="lg" onclick={() => (creditDialogOpen = true)}>
+						<Sidebar.MenuButton
+							size="lg"
+							onclick={() => {
+								creditDialogOpen = true;
+								if (sidebar.isMobile) {
+									sidebar.toggle();
+								}
+							}}
+						>
 							<span class="w-full text-center">Made by Ingo</span></Sidebar.MenuButton
 						>
 					</Sidebar.MenuItem>
