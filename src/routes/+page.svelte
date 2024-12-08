@@ -34,15 +34,16 @@
 		<h1 class="text-center text-[40px] font-bold">Making indie games for everyone.</h1>
 	</div>
 </div>
-<div class="flex items-center justify-center p-4">
+
+<div class="flex items-center justify-center px-2">
 	<Card.Root class="w-full max-w-prose">
 		<Card.Content>
 			We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur
 			adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
 			ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 			et dolore magna aliqua.
-		</Card.Content>
-	</Card.Root>
+		</Card.Content></Card.Root
+	>
 </div>
 <h2 class="p-4 text-center text-4xl">Check out some of our recent games</h2>
 <div class="flex items-center justify-center p-4">
