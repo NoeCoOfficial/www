@@ -12,11 +12,7 @@
 	import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<SvelteSeo
-	title="About Us - Noe Co."
-	description="We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-		et dolore magna aliqua."
-/>
+<SvelteSeo title="About Us - Noe Co." description="We are a team of three who like making games." />
 
 <header class="sticky top-0 flex h-16 w-full shrink-0 items-center gap-2 backdrop-blur-xl">
 	<div class="flex items-center gap-2 px-4">
@@ -44,10 +40,7 @@
 
 <div class="flex items-center justify-center px-2">
 	<Card.Root class="w-full max-w-prose">
-		<Card.Content>
-			We are a team of three who like making games. Lorem ipsum dolor sit amet, consectetur
-			adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		</Card.Content></Card.Root
+		<Card.Content>We are a team of three who like making games.</Card.Content></Card.Root
 	>
 </div>
 
