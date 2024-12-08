@@ -3,6 +3,7 @@
 	import * as Breadcrumb from '$lib/components/ui/breadcrumb/index.js';
 	import { Separator } from '$lib/components/ui/separator/index.js';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
+	import * as Card from '$lib/components/ui/card/index.js';
 </script>
 
 <SvelteSeo title="Privacy Policy - Noe Co." />
@@ -25,15 +26,17 @@
 	</div>
 </header>
 
-<div class="flex items-center justify-center">
-	<div class="flex min-h-48 max-w-prose flex-col items-end justify-center gap-8 p-4 md:flex-row">
-		<h1 class="text-center text-[40px] font-bold">Privacy Policy</h1>
-	</div>
+<div class="flex justify-center">
+	<div class="max-w-screen-lg p-2"></div>
 </div>
 
-<div class="flex justify-center">
-	<div class="max-w-screen-lg p-2">
-		We currently don't collect any data, but we may in the future. If we do, we will update this
-		page to reflect that.
+<div class="flex items-center justify-center p-4">
+	<div class="flex items-center justify-center p-4">
+		<Card.Root class="w-full max-w-prose">
+			<Card.Content>
+				We currently don't collect any data, but we may in the future. If we do, we will update this
+				page to reflect that.
+			</Card.Content></Card.Root
+		>
 	</div>
 </div>
