@@ -52,7 +52,7 @@
 						{#if mainItem.items?.length}
 							<Collapsible.Trigger>
 								{#snippet child({ props })}
-									<Sidebar.MenuAction {...props} class="p-4 data-[state=open]:rotate-90">
+									<Sidebar.MenuAction {...props} class="h-7 w-7 data-[state=open]:rotate-90">
 										<ChevronRight />
 										<span class="sr-only">Toggle</span>
 									</Sidebar.MenuAction>
