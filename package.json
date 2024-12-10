@@ -13,11 +13,11 @@
 	},
 	"devDependencies": {
 		"@fontsource/schibsted-grotesk": "^5.1.0",
-		"@playwright/test": "^1.49.0",
+		"@playwright/test": "^1.49.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-cloudflare": "^4.8.0",
-		"@sveltejs/enhanced-img": "^0.4.1",
-		"@sveltejs/kit": "^2.9.0",
+		"@sveltejs/enhanced-img": "^0.4.3",
+		"@sveltejs/kit": "^2.10.1",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/node": "^22.10.1",
 		"autoprefixer": "^10.4.20",
@@ -27,7 +27,7 @@
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.2.6",
 		"prettier-plugin-tailwindcss": "^0.6.5",
-		"svelte": "^5.8.1",
+		"svelte": "^5.10.0",
 		"svelte-check": "^4.1.1",
 		"svelte-seo": "^1.6.1",
 		"tailwind-merge": "^2.5.5",
@@ -37,7 +37,7 @@
 		"typescript": "^5.0.0",
 		"vaul-svelte": "1.0.0-next.3",
 		"vite": "^5.0.3",
-		"wrangler": "^3.93.0"
+		"wrangler": "^3.95.0"
 	},
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": "^6.7.1",
