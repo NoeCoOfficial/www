@@ -75,8 +75,8 @@
 			<Card.Content>
 				<p>
 					Tristan is 14 years old and unlike Seb, enjoys making game assets rather than coding, as
-					well as being skilled in Blender, Soundtrap and paperwork. Tristan is our main source of
-					ideas for the team. He is great at making lore, storyboarding and game planning. His
+					well as being skilled in Blender, Soundtrap, and paperwork. Tristan is the main source of
+					ideas. He is great at making lore, storyboarding, and game planning. His
 					favorite video game is Subnautica.
 				</p>
 			</Card.Content>
