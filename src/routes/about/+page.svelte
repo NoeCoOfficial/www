@@ -12,7 +12,7 @@
 	import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<SvelteSeo title="About Us - Noe Co." description="We are a team of three who like making games." />
+<SvelteSeo title="About Us - Noe Co." description="We are a partnership of two who like making games." />
 
 <header class="sticky top-0 flex h-16 w-full shrink-0 items-center gap-2 backdrop-blur-xl">
 	<div class="flex items-center gap-2 px-4">
@@ -40,7 +40,7 @@
 
 <div class="flex items-center justify-center px-2">
 	<Card.Root class="w-full max-w-prose">
-		<Card.Content>We are a team of three who like making games.</Card.Content></Card.Root
+		<Card.Content>We are a partnership of two who like making games.</Card.Content></Card.Root
 	>
 </div>
 
@@ -85,32 +85,6 @@
 				<div class="flex flex-row justify-center gap-1">
 					<Button size="icon" variant="ghost" href="https://github.com/GoatsAreTB" target="_blank">
 						<Fa icon={faGithub} /></Button
-					>
-				</div>
-			</Card.Footer>
-		</Card.Root>
-		<Card.Root class="flex h-full w-full flex-col">
-			<Card.Header>
-				<Card.Title>Erik Miller</Card.Title>
-			</Card.Header>
-			<Card.Content>
-				<p>
-					Erik is a talented artist and animator, creating visually stunning and immersive game
-					environments. They add the finishing touch to the team's creations. Erik is 14 years old
-					and loves making pixel art and music for the team. He holds skills in Pixilart and
-					Soundtrap.
-				</p>
-			</Card.Content>
-			<div class="flex-grow"></div>
-			<Card.Footer>
-				<div class="flex flex-row justify-center gap-1">
-					<Button
-						size="icon"
-						variant="ghost"
-						href="https://www.youtube.com/@BBIFFIY"
-						target="_blank"
-					>
-						<Fa icon={faYoutube} /></Button
 					>
 				</div>
 			</Card.Footer>
