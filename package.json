@@ -40,7 +40,7 @@
 		"wrangler": "^3.95.0"
 	},
 	"dependencies": {
-		"@fortawesome/free-brands-svg-icons": "^6.7.1",
+		"@fortawesome/free-brands-svg-icons": "^6.7.2",
 		"runed": "^0.18.0",
 		"svelte-fa": "^4.0.3"
 	}
