@@ -12,8 +12,8 @@ importers:
         specifier: ^6.7.2
         version: 6.7.2
       runed:
-        specifier: ^0.18.0
-        version: 0.18.0(svelte@5.14.1)
+        specifier: ^0.19.0
+        version: 0.19.0(svelte@5.14.1)
       svelte-fa:
         specifier: ^4.0.3
         version: 4.0.3(svelte@5.14.1)
@@ -1575,10 +1575,10 @@ packages:
     peerDependencies:
       svelte: ^5.0.0-next.1
 
-  runed@0.18.0:
-    resolution: {integrity: sha512-siuvOl9Qa1A/gDHE3HuxG1fQQMkh6aOMqKDdGvcRbl53aiz3JbxTrf6DcA/lai8SAR1EMwOs8xX6Vk2PGHXOgA==}
+  runed@0.19.0:
+    resolution: {integrity: sha512-VxUk/Lbm5WPR/b+NDQ+Itp/anG6bUWXH+JBUNA1M/YG/lsKZ1Gn+WwvBwyE/8aTpAV7ij12aEVxh78utqi/Q4A==}
     peerDependencies:
-      svelte: ^5.0.0-next.1
+      svelte: ^5.7.0
 
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
@@ -3047,7 +3047,7 @@ snapshots:
       esm-env: 1.2.1
       svelte: 5.14.1
 
-  runed@0.18.0(svelte@5.14.1):
+  runed@0.19.0(svelte@5.14.1):
     dependencies:
       esm-env: 1.2.1
       svelte: 5.14.1
