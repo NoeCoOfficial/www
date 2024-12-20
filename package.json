@@ -41,7 +41,7 @@
 	},
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": "^6.7.2",
-		"runed": "^0.20.0",
+		"runed": "^0.21.0",
 		"svelte-fa": "^4.0.3"
 	}
 }
