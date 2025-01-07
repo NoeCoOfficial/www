@@ -12,8 +12,8 @@ importers:
         specifier: ^6.7.2
         version: 6.7.2
       runed:
-        specifier: ^0.20.0
-        version: 0.20.0(svelte@5.16.5)
+        specifier: ^0.23.0
+        version: 0.23.0(svelte@5.16.5)
       svelte-fa:
         specifier: ^4.0.3
         version: 4.0.3(svelte@5.16.5)
@@ -1576,6 +1576,11 @@ packages:
     peerDependencies:
       svelte: ^5.7.0
 
+  runed@0.23.0:
+    resolution: {integrity: sha512-WrZcFneb3CkFvujgss6WIvKmlSUvX2z8nYsH+zrd8eo55zO6nkEJ6fRL2QZW+2lAD4DVvAK/8x0dotIRVrnPJQ==}
+    peerDependencies:
+      svelte: ^5.7.0
+
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
@@ -3044,6 +3049,11 @@ snapshots:
       svelte: 5.16.5
 
   runed@0.22.0(svelte@5.16.5):
+    dependencies:
+      esm-env: 1.2.1
+      svelte: 5.16.5
+
+  runed@0.23.0(svelte@5.16.5):
     dependencies:
       esm-env: 1.2.1
       svelte: 5.16.5
