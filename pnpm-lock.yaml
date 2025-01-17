@@ -52,8 +52,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       lucide-svelte:
-        specifier: ^0.471.0
-        version: 0.471.0(svelte@5.18.0)
+        specifier: ^0.472.0
+        version: 0.472.0(svelte@5.18.0)
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
@@ -1283,8 +1283,8 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
-  lucide-svelte@0.471.0:
-    resolution: {integrity: sha512-z+C6G2K089iDGbl8HzTdD5G6i5BvuaBxdIPQDa650Kb8TXBJRODa7YfmaIHy78+Y+YaB75N0lzUIQEclzflJrQ==}
+  lucide-svelte@0.472.0:
+    resolution: {integrity: sha512-QbFPmHQ6TYlcZGAfwXaMiAqX26ZL0WjfnQC2VZWecR4q2YrzmidWPJAskHz5pUSORVlPOTnBb4YriwBLssUX2w==}
     peerDependencies:
       svelte: ^3 || ^4 || ^5.0.0-next.42
 
@@ -1844,7 +1844,7 @@ packages:
   wrangler@3.103.0:
     resolution: {integrity: sha512-DK1wLHwiELI5jmHolf7ZCWji+CkSgSZdD/ccrCtDWr5r9vJSb6gpPG9Dc7E68Z/yMFub9+r2XuwKLHEABMLZWw==}
     engines: {node: '>=16.17.0'}
-    deprecated: Upgrade to 3.103.1
+    deprecated: Downgrade to 3.99.0
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20241230.0
@@ -2817,7 +2817,7 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  lucide-svelte@0.471.0(svelte@5.18.0):
+  lucide-svelte@0.472.0(svelte@5.18.0):
     dependencies:
       svelte: 5.18.0
 
