@@ -34,9 +34,10 @@
 <div class="flex items-center justify-center px-2">
 	<Card.Root class="w-full max-w-prose">
 		<Card.Content>
-			We are a partnership of two developers looking to find joy in making video games. Currently as of writing, 
-			we only have one game in development, called Expland, which we plan to be our first game to release to the public. 
-			We are putting our heart and soul into this game, and we hope you enjoy it when it comes out. Stay tuned! 
+			We are a partnership of two developers looking to find joy in making video games. Currently as
+			of writing, we only have one game in development, called Expland, which we plan to be our
+			first game to release to the public. We are putting our heart and soul into this game, and we
+			hope you enjoy it when it comes out. Stay tuned!
 		</Card.Content>
 	</Card.Root>
 </div>

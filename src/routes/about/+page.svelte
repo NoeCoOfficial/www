@@ -12,7 +12,10 @@
 	import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<SvelteSeo title="About Us - Noe Co." description="We are a partnership of two who like making games." />
+<SvelteSeo
+	title="About Us - Noe Co."
+	description="We are a partnership of two who like making games."
+/>
 
 <header class="sticky top-0 flex h-16 w-full shrink-0 items-center gap-2 backdrop-blur-xl">
 	<div class="flex items-center gap-2 px-4">
@@ -20,10 +23,10 @@
 		<Separator orientation="vertical" class="mr-2 h-4" />
 		<Breadcrumb.Root>
 			<Breadcrumb.List>
-				<Breadcrumb.Item>
+				<Breadcrumb.Item class="hidden md:block">
 					<Breadcrumb.Link href="/">Home</Breadcrumb.Link>
 				</Breadcrumb.Item>
-				<Breadcrumb.Separator></Breadcrumb.Separator>
+				<Breadcrumb.Separator class="hidden md:block"></Breadcrumb.Separator>
 				<Breadcrumb.Item>
 					<Breadcrumb.Page>About Us</Breadcrumb.Page>
 				</Breadcrumb.Item>
@@ -76,8 +79,8 @@
 				<p>
 					Tristan is 14 years old and unlike Seb, enjoys making game assets rather than coding, as
 					well as being skilled in Blender, Soundtrap, and paperwork. Tristan is the main source of
-					ideas. He is great at making lore, storyboarding, and game planning. His
-					favorite video game is Subnautica.
+					ideas. He is great at making lore, storyboarding, and game planning. His favorite video
+					game is Subnautica.
 				</p>
 			</Card.Content>
 			<div class="flex-grow"></div>
