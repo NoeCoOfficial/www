@@ -23,10 +23,10 @@
 		<Separator orientation="vertical" class="mr-2 h-4" />
 		<Breadcrumb.Root>
 			<Breadcrumb.List>
-				<Breadcrumb.Item>
+				<Breadcrumb.Item class="hidden md:block">
 					<Breadcrumb.Link href="/">Home</Breadcrumb.Link>
 				</Breadcrumb.Item>
-				<Breadcrumb.Separator></Breadcrumb.Separator>
+				<Breadcrumb.Separator class="hidden md:block"></Breadcrumb.Separator>
 				<Breadcrumb.Item>
 					<Breadcrumb.Page>About Us</Breadcrumb.Page>
 				</Breadcrumb.Item>
