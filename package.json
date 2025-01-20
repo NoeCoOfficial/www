@@ -21,7 +21,7 @@
 		"@sveltejs/vite-plugin-svelte": "^4.0.4",
 		"@types/node": "^22.10.7",
 		"autoprefixer": "^10.4.20",
-		"bits-ui": "1.0.0-next.77",
+		"bits-ui": "1.0.0-next.78",
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.472.0",
 		"prettier": "^3.4.2",
