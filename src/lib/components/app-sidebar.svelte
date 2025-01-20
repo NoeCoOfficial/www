@@ -44,7 +44,7 @@
 	import * as Drawer from '$lib/components/ui/drawer/index.js';
 	import CreditAndStack from '$lib/components/credit-and-stack.svelte';
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
-	import { MediaQuery } from 'runed';
+	import { MediaQuery } from 'svelte/reactivity';
 	import { useSidebar } from '$lib/components/ui/sidebar/index.js';
 	const sidebar = useSidebar();
 
