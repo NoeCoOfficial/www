@@ -129,7 +129,7 @@
 	</Sidebar.Footer>
 </Sidebar.Root>
 
-{#if isDesktop.matches}
+{#if isDesktop.current}
 	<Dialog.Root bind:open={creditDialogOpen}>
 		<Dialog.Content>
 			<Dialog.Header>
