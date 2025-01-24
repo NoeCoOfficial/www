@@ -19,7 +19,7 @@
 		"@sveltejs/enhanced-img": "^0.4.4",
 		"@sveltejs/kit": "^2.16.1",
 		"@sveltejs/vite-plugin-svelte": "^4.0.4",
-		"@types/node": "^22.10.9",
+		"@types/node": "^22.10.10",
 		"autoprefixer": "^10.4.20",
 		"bits-ui": "1.0.0-next.78",
 		"clsx": "^2.1.1",
