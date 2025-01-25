@@ -41,6 +41,7 @@
 	},
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": "^6.7.2",
+		"@tailwindcss/postcss": "^4.0.0",
 		"runed": "^0.23.1",
 		"svelte-fa": "^4.0.3"
 	}
