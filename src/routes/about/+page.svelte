@@ -48,7 +48,9 @@
 </div>
 
 <div class="flex justify-center">
-	<div class="flex max-w-screen-lg flex-col items-start justify-center gap-2 p-2 md:flex-row">
+	<div
+		class="flex max-w-(--breakpoint-lg) flex-col items-start justify-center gap-2 p-2 md:flex-row"
+	>
 		<Card.Root class="flex h-full w-full flex-col">
 			<Card.Header>
 				<Card.Title>Sebastian Suciu</Card.Title>
@@ -62,7 +64,7 @@
 					skilled in GDScript, Python and C++.
 				</p>
 			</Card.Content>
-			<div class="flex-grow"></div>
+			<div class="grow"></div>
 			<Card.Footer>
 				<div class="flex flex-row justify-center gap-1">
 					<Button size="icon" variant="ghost" href="https://github.com/sebashtioon" target="_blank">
@@ -83,7 +85,7 @@
 					game is Subnautica.
 				</p>
 			</Card.Content>
-			<div class="flex-grow"></div>
+			<div class="grow"></div>
 			<Card.Footer>
 				<div class="flex flex-row justify-center gap-1">
 					<Button size="icon" variant="ghost" href="https://github.com/GoatsAreTB" target="_blank">
