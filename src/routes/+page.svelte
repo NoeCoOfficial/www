@@ -44,7 +44,9 @@
 <h2 class="p-4 text-center text-4xl">Check out some of our recent games</h2>
 
 <div class="flex justify-center">
-	<div class="flex max-w-screen-lg flex-col items-start justify-center gap-2 p-2 md:flex-row">
+	<div
+		class="flex max-w-(--breakpoint-lg) flex-col items-start justify-center gap-2 p-2 md:flex-row"
+	>
 		<Card.Root class="flex h-full w-full max-w-96 flex-col">
 			<Card.Header>
 				<Card.Title>Expland</Card.Title>
@@ -56,9 +58,9 @@
 					happiness just around the corner.
 				</p>
 			</Card.Content>
-			<div class="flex-grow"></div>
+			<div class="grow"></div>
 			<Card.Footer>
-				<div class="flex flex-grow flex-row justify-center gap-1 [&>*:first-child]:flex-grow">
+				<div class="flex grow flex-row justify-center gap-1 [&>*:first-child]:grow">
 					<Button
 						class=""
 						href="https://github.com/NoeCoOfficial/Expland/releases"

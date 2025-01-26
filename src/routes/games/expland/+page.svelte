@@ -14,7 +14,7 @@
 />
 
 <header
-	class="sticky top-0 z-10 m-2 flex h-12 w-fit shrink-0 items-center gap-2 rounded-lg bg-black bg-opacity-50 backdrop-blur-xl md:ml-0"
+	class="bg-opacity-50 sticky top-0 z-10 m-2 flex h-12 w-fit shrink-0 items-center gap-2 rounded-lg bg-black backdrop-blur-xl md:ml-0"
 >
 	<div class="flex items-center gap-2 px-4">
 		<Sidebar.Trigger class="-ml-1" />
@@ -37,11 +37,11 @@
 	</div>
 </header>
 
-<video src={preview} autoplay muted loop class="fixed left-0 top-0 h-screen w-screen object-cover"
+<video src={preview} autoplay muted loop class="fixed top-0 left-0 h-screen w-screen object-cover"
 ></video>
 
 <div
-	class="fixed bottom-0 z-10 flex h-fit flex-col gap-4 rounded-t-lg bg-black bg-opacity-50 p-10 backdrop-blur-xl lg:bottom-2 lg:max-w-screen-md lg:rounded-lg"
+	class="bg-opacity-50 fixed bottom-0 z-10 flex h-fit flex-col gap-4 rounded-t-lg bg-black p-10 backdrop-blur-xl lg:bottom-2 lg:max-w-(--breakpoint-md) lg:rounded-lg"
 >
 	<div class="flex flex-col items-center justify-center gap-4 lg:flex-row">
 		<!-- <img src={textlogo_white} alt="Expland" class="h-16 self-center" /> -->
@@ -50,7 +50,7 @@
 			alt="Expland"
 			class="h-24 w-72 self-center object-cover"
 		/>
-		<div class="flex-grow"></div>
+		<div class="grow"></div>
 		<Button href="https://github.com/NoeCoOfficial/Expland/releases" target="_blank" size="lg"
 			>Download</Button
 		>
