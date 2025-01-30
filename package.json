@@ -32,7 +32,7 @@
 		"svelte-seo": "^1.6.1",
 		"tailwind-merge": "^2.6.0",
 		"tailwind-variants": "^0.3.1",
-		"tailwindcss": "^4.0.0",
+		"tailwindcss": "^4.0.1",
 		"tailwindcss-animate": "^1.0.7",
 		"typescript": "^5.7.3",
 		"vaul-svelte": "1.0.0-next.3",
