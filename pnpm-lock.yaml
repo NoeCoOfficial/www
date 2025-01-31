@@ -46,8 +46,8 @@ importers:
         specifier: ^22.12.0
         version: 22.12.0
       bits-ui:
-        specifier: 1.0.0-next.80
-        version: 1.0.0-next.80(svelte@5.19.5)
+        specifier: 1.0.0-next.81
+        version: 1.0.0-next.81(svelte@5.19.5)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1000,8 +1000,8 @@ packages:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
     engines: {node: '>= 0.4'}
 
-  bits-ui@1.0.0-next.80:
-    resolution: {integrity: sha512-b6r5QgUwi/feFuZZfvTI+HuSCT1/5NoFTWcuqGTTSMjBAtsnS4NI34dzOpB7enKWR5Cb/UxuGhzS/lXUgoTV8Q==}
+  bits-ui@1.0.0-next.81:
+    resolution: {integrity: sha512-LSvKvlPdDqBnRXKc2M/YyibR8d7XIvrZbgDxtevmCLcYxuIrFMBGir9uYPohPIUQcLterc/MdLNlG4glpCzNvg==}
     engines: {node: '>=18', pnpm: '>=8.7.0'}
     peerDependencies:
       svelte: ^5.11.0
@@ -1415,6 +1415,11 @@ packages:
     peerDependencies:
       svelte: ^5.7.0
 
+  runed@0.23.2:
+    resolution: {integrity: sha512-AhHCb5/B+YQW6ar1pzhGQOQy+byfjCH63ofuhrexSWwQKhC0EbQ60Z/wMYwETLo3ZubhwlNryxBt0seOMOrVFQ==}
+    peerDependencies:
+      svelte: ^5.7.0
+
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
@@ -1518,9 +1523,6 @@ packages:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
-
-  tailwindcss@4.0.0:
-    resolution: {integrity: sha512-ULRPI3A+e39T7pSaf1xoi58AqqJxVCLg8F/uM5A3FadUbnyDTgltVnXJvdkTjwCOGA6NazqHVcwPJC5h2vRYVQ==}
 
   tailwindcss@4.0.1:
     resolution: {integrity: sha512-UK5Biiit/e+r3i0O223bisoS5+y7ZT1PM8Ojn0MxRHzXN1VPZ2KY6Lo6fhu1dOfCfyUAlK7Lt6wSxowRabATBw==}
@@ -2251,13 +2253,13 @@ snapshots:
 
   axobject-query@4.1.0: {}
 
-  bits-ui@1.0.0-next.80(svelte@5.19.5):
+  bits-ui@1.0.0-next.81(svelte@5.19.5):
     dependencies:
       '@floating-ui/core': 1.6.9
       '@floating-ui/dom': 1.6.13
       '@internationalized/date': 3.7.0
       esm-env: 1.2.2
-      runed: 0.23.1(svelte@5.19.5)
+      runed: 0.23.2(svelte@5.19.5)
       svelte: 5.19.5
       svelte-toolbelt: 0.7.0(svelte@5.19.5)
 
@@ -2644,6 +2646,11 @@ snapshots:
       esm-env: 1.2.2
       svelte: 5.19.5
 
+  runed@0.23.2(svelte@5.19.5):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.19.5
+
   sade@1.8.1:
     dependencies:
       mri: 1.2.0
@@ -2778,8 +2785,6 @@ snapshots:
     dependencies:
       tailwindcss: 4.0.1
 
-  tailwindcss@4.0.0: {}
-
   tailwindcss@4.0.1: {}
 
   tapable@2.2.1: {}
@@ -2808,7 +2813,7 @@ snapshots:
 
   vaul-svelte@1.0.0-next.3(svelte@5.19.5):
     dependencies:
-      bits-ui: 1.0.0-next.80(svelte@5.19.5)
+      bits-ui: 1.0.0-next.81(svelte@5.19.5)
       svelte: 5.19.5
       svelte-toolbelt: 0.4.6(svelte@5.19.5)
 
