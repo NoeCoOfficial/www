@@ -12,8 +12,8 @@ importers:
         specifier: ^6.7.2
         version: 6.7.2
       runed:
-        specifier: ^0.23.1
-        version: 0.23.1(svelte@5.19.5)
+        specifier: ^0.23.2
+        version: 0.23.2(svelte@5.19.5)
       svelte-fa:
         specifier: ^4.0.3
         version: 4.0.3(svelte@5.19.5)
@@ -1410,8 +1410,8 @@ packages:
     peerDependencies:
       svelte: ^5.7.0
 
-  runed@0.23.1:
-    resolution: {integrity: sha512-h1ZDmin0LBoSMEZxvHOJbCWsUBz4099cjI+/rQ4FZystgOq294s5Rh+OEeu9HIObc8XQQEya23eAhJeal0VBuA==}
+  runed@0.23.2:
+    resolution: {integrity: sha512-AhHCb5/B+YQW6ar1pzhGQOQy+byfjCH63ofuhrexSWwQKhC0EbQ60Z/wMYwETLo3ZubhwlNryxBt0seOMOrVFQ==}
     peerDependencies:
       svelte: ^5.7.0
 
@@ -1518,9 +1518,6 @@ packages:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
-
-  tailwindcss@4.0.0:
-    resolution: {integrity: sha512-ULRPI3A+e39T7pSaf1xoi58AqqJxVCLg8F/uM5A3FadUbnyDTgltVnXJvdkTjwCOGA6NazqHVcwPJC5h2vRYVQ==}
 
   tailwindcss@4.0.1:
     resolution: {integrity: sha512-UK5Biiit/e+r3i0O223bisoS5+y7ZT1PM8Ojn0MxRHzXN1VPZ2KY6Lo6fhu1dOfCfyUAlK7Lt6wSxowRabATBw==}
@@ -2257,7 +2254,7 @@ snapshots:
       '@floating-ui/dom': 1.6.13
       '@internationalized/date': 3.7.0
       esm-env: 1.2.2
-      runed: 0.23.1(svelte@5.19.5)
+      runed: 0.23.2(svelte@5.19.5)
       svelte: 5.19.5
       svelte-toolbelt: 0.7.0(svelte@5.19.5)
 
@@ -2639,7 +2636,7 @@ snapshots:
       esm-env: 1.2.2
       svelte: 5.19.5
 
-  runed@0.23.1(svelte@5.19.5):
+  runed@0.23.2(svelte@5.19.5):
     dependencies:
       esm-env: 1.2.2
       svelte: 5.19.5
@@ -2777,8 +2774,6 @@ snapshots:
   tailwindcss-animate@1.0.7(tailwindcss@4.0.1):
     dependencies:
       tailwindcss: 4.0.1
-
-  tailwindcss@4.0.0: {}
 
   tailwindcss@4.0.1: {}
 
