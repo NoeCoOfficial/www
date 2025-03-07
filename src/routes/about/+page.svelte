@@ -57,7 +57,7 @@
 			</Card.Header>
 			<Card.Content>
 				<p>
-					Seb is a 14 year old in high school who loves messing around with computers and
+					Seb is a 14-year-old in high school who loves messing around with computers and
 					programming languages. His favorite video game is Geometry Dash, and the engine he uses to
 					make games is Godot and Blender. He has been making games and projects for over 2 years,
 					and he has been loving every second of it. He enjoys playing Basketball and sport and is
@@ -79,7 +79,7 @@
 			</Card.Header>
 			<Card.Content>
 				<p>
-					Tristan is 14 years old and unlike Seb, enjoys making game assets rather than coding, as
+					Tristan is 15 years old and unlike Seb, enjoys making game assets rather than coding, as
 					well as being skilled in Blender, Soundtrap, and paperwork. Tristan is the main source of
 					ideas. He is great at making lore, storyboarding, and game planning. His favorite video
 					game is Subnautica.
