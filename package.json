@@ -19,29 +19,38 @@
 		"@sveltejs/enhanced-img": "^0.4.4",
 		"@sveltejs/kit": "^2.16.1",
 		"@sveltejs/vite-plugin-svelte": "^4.0.4",
-		"@tailwindcss/postcss": "^4.0.0",
-		"@types/node": "^22.10.10",
-		"bits-ui": "1.0.0-next.78",
+		"@tailwindcss/postcss": "^4.0.1",
+		"@types/node": "^22.12.0",
+		"bits-ui": "1.0.0-next.81",
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.474.0",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
-		"svelte": "^5.19.2",
+		"svelte": "^5.19.5",
 		"svelte-check": "^4.1.4",
 		"svelte-seo": "^1.6.1",
-		"tailwind-merge": "^2.6.0",
+		"tailwind-merge": "^3.0.1",
 		"tailwind-variants": "^0.3.1",
-		"tailwindcss": "^4.0.0",
+		"tailwindcss": "^4.0.1",
 		"tailwindcss-animate": "^1.0.7",
 		"typescript": "^5.7.3",
 		"vaul-svelte": "1.0.0-next.3",
 		"vite": "^5.4.12",
-		"wrangler": "^3.105.0"
+		"wrangler": "^3.107.1"
 	},
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": "^6.7.2",
-		"runed": "^0.23.1",
+		"posthog-js": "^1.232.7",
+		"runed": "^0.23.2",
 		"svelte-fa": "^4.0.3"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"core-js",
+			"esbuild",
+			"sharp",
+			"workerd"
+		]
 	}
 }
