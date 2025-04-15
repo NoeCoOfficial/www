@@ -29,16 +29,16 @@ importers:
         version: 1.51.1
       '@sveltejs/adapter-auto':
         specifier: ^4.0.0
-        version: 4.0.0(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))
+        version: 4.0.0(@sveltejs/kit@2.20.6(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))
       '@sveltejs/adapter-cloudflare':
         specifier: ^5.0.1
-        version: 5.1.0(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(wrangler@3.114.2(@cloudflare/workers-types@4.20250321.0))
+        version: 5.1.0(@sveltejs/kit@2.20.6(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(wrangler@3.114.2(@cloudflare/workers-types@4.20250321.0))
       '@sveltejs/enhanced-img':
         specifier: ^0.4.4
         version: 0.4.4(rollup@4.37.0)(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))
       '@sveltejs/kit':
-        specifier: ^2.16.1
-        version: 2.20.2(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))
+        specifier: ^2.20.6
+        version: 2.20.6(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^4.0.4
         version: 4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))
@@ -751,8 +751,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@polka/url@1.0.0-next.28':
-    resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
+  '@polka/url@1.0.0-next.29':
+    resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
   '@rollup/pluginutils@5.1.4':
     resolution: {integrity: sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==}
@@ -885,8 +885,8 @@ packages:
       svelte: ^5.0.0
       vite: '>= 5.0.0'
 
-  '@sveltejs/kit@2.20.2':
-    resolution: {integrity: sha512-Dv8TOAZC9vyfcAB9TMsvUEJsRbklRTeNfcYBPaeH6KnABJ99i3CvCB2eNx8fiiliIqe+9GIchBg4RodRH5p1BQ==}
+  '@sveltejs/kit@2.20.6':
+    resolution: {integrity: sha512-ImUkSQ//Xf4N9r0HHAe5vRA7RyQ7U1Ue1YUT235Ig+IiIqbsixEulHTHrP5LtBiC8xOkJoPZQ1VZ/nWHNOaGGw==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -2055,7 +2055,7 @@ snapshots:
     dependencies:
       playwright: 1.51.1
 
-  '@polka/url@1.0.0-next.28': {}
+  '@polka/url@1.0.0-next.29': {}
 
   '@rollup/pluginutils@5.1.4(rollup@4.37.0)':
     dependencies:
@@ -2129,15 +2129,15 @@ snapshots:
     dependencies:
       acorn: 8.14.1
 
-  '@sveltejs/adapter-auto@4.0.0(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))':
+  '@sveltejs/adapter-auto@4.0.0(@sveltejs/kit@2.20.6(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))':
     dependencies:
-      '@sveltejs/kit': 2.20.2(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))
+      '@sveltejs/kit': 2.20.6(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))
       import-meta-resolve: 4.1.0
 
-  '@sveltejs/adapter-cloudflare@5.1.0(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(wrangler@3.114.2(@cloudflare/workers-types@4.20250321.0))':
+  '@sveltejs/adapter-cloudflare@5.1.0(@sveltejs/kit@2.20.6(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(wrangler@3.114.2(@cloudflare/workers-types@4.20250321.0))':
     dependencies:
       '@cloudflare/workers-types': 4.20250321.0
-      '@sveltejs/kit': 2.20.2(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))
+      '@sveltejs/kit': 2.20.6(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))
       esbuild: 0.24.2
       worktop: 0.8.0-next.18
       wrangler: 3.114.2(@cloudflare/workers-types@4.20250321.0)
@@ -2154,7 +2154,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  '@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))':
+  '@sveltejs/kit@2.20.6(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2)))(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 4.0.4(svelte@5.25.3)(vite@5.4.15(@types/node@22.13.13)(lightningcss@1.29.2))
       '@types/cookie': 0.6.0
@@ -2701,7 +2701,7 @@ snapshots:
 
   sirv@3.0.1:
     dependencies:
-      '@polka/url': 1.0.0-next.28
+      '@polka/url': 1.0.0-next.29
       mrmime: 2.0.1
       totalist: 3.0.1
 
