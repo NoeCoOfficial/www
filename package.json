@@ -41,7 +41,7 @@
 	},
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": "^6.7.2",
-		"posthog-js": "^1.232.7",
+		"posthog-js": "^1.236.2",
 		"runed": "^0.23.2",
 		"svelte-fa": "^4.0.3"
 	},
