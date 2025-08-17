@@ -12,7 +12,7 @@ export default function Home() {
           className="self-center"
           initial={{ opacity: 0, x: -25 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: [0.165, 0.84, 0.44, 1.0] }}
+          transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.1 }}
         >
           <Image
             src="/logo-transparent.png"
@@ -26,7 +26,7 @@ export default function Home() {
           className="self-center"
           initial={{ opacity: 0, x: 25 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.1 }}
+          transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.2 }}
         >
           <h1 className="text-left text-4xl font-bold">
             Making indie games for everyone.
@@ -37,7 +37,7 @@ export default function Home() {
         className="max-w-2xl w-full mx-auto mt-5"
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.2 }}
+        transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.3 }}
       >
         We are a partnership of two developers looking to find joy in making
         video games. Currently as of writing, we only have one game in
