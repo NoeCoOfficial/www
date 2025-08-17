@@ -33,11 +33,11 @@ export default function RootLayout({
       <body
         className={`${geistMono.variable} ${schibstedGrotesk.className} antialiased`}
       >
-        <Navbar />
         <ThemeProvider attribute="class" defaultTheme="dark">
+          <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
-        <Footer />
       </body>
     </html>
   );
