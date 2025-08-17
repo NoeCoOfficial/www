@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Link from "next/link";
+import { Navbar } from "@/components/navbar";
 
 const schibstedGrotesk = Schibsted_Grotesk({
   variable: "--font-schibsted-grotesk",
@@ -31,15 +32,8 @@ export default function RootLayout({
       <body
         className={`${geistMono.variable} ${schibstedGrotesk.className} antialiased`}
       >
+        <Navbar />
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <div className="container mx-auto p-3 px-5 font-bold text-md flex flex-row gap-5">
-            <Link href="/">Noe Co.</Link>
-            <div className="grow"></div>
-            <Link href="/">Home</Link>
-            <Link href="/games">Games</Link>
-            <Link href="/about">About</Link>
-            <Link href="/privacy">Privacy</Link>
-          </div>
           {children}
         </ThemeProvider>
       </body>
