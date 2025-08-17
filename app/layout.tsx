@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${geistMono.variable} ${schibstedGrotesk.className} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <div className="container mx-auto p-3 font-bold text-md flex flex-row gap-5">
+          <div className="container mx-auto p-3 px-5 font-bold text-md flex flex-row gap-5">
             <Link href="/">Noe Co.</Link>
             <div className="grow"></div>
             <Link href="/">Home</Link>
