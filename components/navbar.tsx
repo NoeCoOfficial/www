@@ -23,6 +23,11 @@ const navItems = [
     label: "GitHub",
     target: "_blank",
   },
+  {
+    href: "https://discord.gg/QNgcKCAJn3",
+    label: "Discord",
+    target: "_blank",
+  },
 ];
 
 export function Navbar() {
