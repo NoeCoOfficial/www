@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="max-w-2xl w-full grid md:grid-cols-2 grid-cols-1 mx-auto p-3 gap-10 mt-20">
         <motion.div
-          className="self-center"
+          className="self-center flex justify-center items-center"
           initial={{ opacity: 0, x: -25 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.1 }}
@@ -17,7 +17,7 @@ export default function Home() {
           <Image
             src="/logo-transparent.png"
             alt="Noe Co. Logo"
-            className="md:max-w-52 ml-auto"
+            className="max-w-52"
             width={500}
             height={305}
           />
@@ -28,7 +28,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.2 }}
         >
-          <h1 className="text-left text-4xl font-bold">
+          <h1 className="text-center text-4xl font-bold">
             Making indie games for everyone.
           </h1>
         </motion.div>
