@@ -11,8 +11,23 @@ import {
   DrawerTrigger,
 } from "./ui/drawer";
 import Image from "next/image";
+import { useState } from "react";
+
+const navItems = [
+  { href: "/", label: "Home", target: "_self" },
+  { href: "/games", label: "Games", target: "_self" },
+  { href: "/about", label: "About", target: "_self" },
+  { href: "/privacy", label: "Privacy", target: "_self" },
+  {
+    href: "https://github.com/noecoofficial",
+    label: "GitHub",
+    target: "_blank",
+  },
+];
 
 export function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -22,19 +37,21 @@ export function Navbar() {
     >
       <Link href="/">Noe Co.</Link>
       <div className="grow"></div>
-      <Link href="/" className="hidden md:inline">
-        Home
-      </Link>
-      <Link href="/games" className="hidden md:inline">
-        Games
-      </Link>
-      <Link href="/about" className="hidden md:inline">
-        About
-      </Link>
-      <Link href="/privacy" className="hidden md:inline">
-        Privacy
-      </Link>
-      <Drawer direction="right">
+      {navItems.map((item) => (
+        <Link
+          key={item.href}
+          href={item.href}
+          className="hidden md:inline"
+          target={item.target}
+        >
+          {item.label}
+        </Link>
+      ))}
+      <Drawer
+        direction="right"
+        open={mobileMenuOpen}
+        onOpenChange={setMobileMenuOpen}
+      >
         <DrawerTrigger className="md:hidden">Menu</DrawerTrigger>
         <DrawerContent>
           <DrawerHeader className="sr-only">
@@ -50,18 +67,17 @@ export function Navbar() {
                 height={305}
               />
             </Link>
-            <Link href="/" className="p-4">
-              Home
-            </Link>
-            <Link href="/games" className="p-4">
-              Games
-            </Link>
-            <Link href="/about" className="p-4">
-              About
-            </Link>
-            <Link href="/privacy" className="p-4">
-              Privacy
-            </Link>
+
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="p-4"
+                target={item.target}
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
         </DrawerContent>
       </Drawer>
