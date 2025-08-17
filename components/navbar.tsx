@@ -2,6 +2,15 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
+import { Button } from "./ui/button";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "./ui/drawer";
+import Image from "next/image";
 
 export function Navbar() {
   return (
@@ -25,6 +34,37 @@ export function Navbar() {
       <Link href="/privacy" className="hidden md:inline">
         Privacy
       </Link>
+      <Drawer direction="right">
+        <DrawerTrigger>Menu</DrawerTrigger>
+        <DrawerContent>
+          <DrawerHeader className="sr-only">
+            <DrawerTitle>Menu</DrawerTitle>
+          </DrawerHeader>
+          <div className="text-xl font-bold flex flex-col justify-center">
+            <Link href="/" className="p-4">
+              <Image
+                src="/logo-transparent.png"
+                alt="Noe Co. Logo"
+                className="max-w-52"
+                width={500}
+                height={305}
+              />
+            </Link>
+            <Link href="/" className="p-4">
+              Home
+            </Link>
+            <Link href="/games" className="p-4">
+              Games
+            </Link>
+            <Link href="/about" className="p-4">
+              About
+            </Link>
+            <Link href="/privacy" className="p-4">
+              Privacy
+            </Link>
+          </div>
+        </DrawerContent>
+      </Drawer>
     </motion.div>
   );
 }
