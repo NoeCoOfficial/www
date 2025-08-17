@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Link from "next/link";
 
 const schibstedGrotesk = Schibsted_Grotesk({
   variable: "--font-schibsted-grotesk",
@@ -31,6 +32,12 @@ export default function RootLayout({
         className={`${geistMono.variable} ${schibstedGrotesk.className} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
+          <div className="container mx-auto p-3 font-bold text-md flex flex-row gap-5">
+            <div className="grow"></div>
+            <Link href="/games">Games</Link>
+            <Link href="/about">About</Link>
+            <Link href="/privacy">Privacy</Link>
+          </div>
           {children}
         </ThemeProvider>
       </body>
