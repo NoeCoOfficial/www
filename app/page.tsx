@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 export default function Home() {
   return (
     <>
-      <div className="max-w-2xl w-full grid grid-cols-2  mx-auto p-3 gap-10 mt-20">
+      <div className="max-w-2xl w-full grid md:grid-cols-2 grid-cols-1 mx-auto p-3 gap-10 mt-20">
         <motion.div
           className="self-center"
           initial={{ opacity: 0, x: -25 }}
@@ -17,7 +17,7 @@ export default function Home() {
           <Image
             src="/logo-transparent.png"
             alt="Noe Co. Logo"
-            className="max-w-52 ml-auto"
+            className="md:max-w-52 ml-auto"
             width={500}
             height={305}
           />
@@ -34,7 +34,7 @@ export default function Home() {
         </motion.div>
       </div>
       <motion.div
-        className="max-w-2xl w-full mx-auto mt-5"
+        className="max-w-2xl w-full mx-auto mt-5 p-3"
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.3 }}

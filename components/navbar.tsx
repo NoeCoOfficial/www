@@ -13,10 +13,18 @@ export function Navbar() {
     >
       <Link href="/">Noe Co.</Link>
       <div className="grow"></div>
-      <Link href="/">Home</Link>
-      <Link href="/games">Games</Link>
-      <Link href="/about">About</Link>
-      <Link href="/privacy">Privacy</Link>
+      <Link href="/" className="hidden md:inline">
+        Home
+      </Link>
+      <Link href="/games" className="hidden md:inline">
+        Games
+      </Link>
+      <Link href="/about" className="hidden md:inline">
+        About
+      </Link>
+      <Link href="/privacy" className="hidden md:inline">
+        Privacy
+      </Link>
     </motion.div>
   );
 }
