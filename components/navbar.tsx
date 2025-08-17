@@ -35,7 +35,7 @@ export function Navbar() {
         Privacy
       </Link>
       <Drawer direction="right">
-        <DrawerTrigger>Menu</DrawerTrigger>
+        <DrawerTrigger className="md:hidden">Menu</DrawerTrigger>
         <DrawerContent>
           <DrawerHeader className="sr-only">
             <DrawerTitle>Menu</DrawerTitle>
