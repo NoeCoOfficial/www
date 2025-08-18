@@ -6,8 +6,8 @@ import { motion } from "motion/react";
 
 export default function Home() {
   return (
-    <>
-      <div className="max-w-2xl w-full grid md:grid-cols-2 grid-cols-1 mx-auto p-3 gap-10 mt-20">
+    <div className="my-auto">
+      <div className="max-w-2xl w-full grid md:grid-cols-2 grid-cols-1 mx-auto p-3 gap-10">
         <motion.div
           className="self-center flex justify-center items-center"
           initial={{ opacity: 0, x: -25 }}
@@ -45,6 +45,6 @@ export default function Home() {
         release to the public. We are putting our heart and soul into this game,
         and we hope you enjoy it when it comes out. Stay tuned!
       </motion.div>
-    </>
+    </div>
   );
 }
