@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 export function Footer() {
   return (
     <motion.footer
-      className="mt-10 border-t border-dashed p-4"
+      className="p-4"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: [0.165, 0.84, 0.44, 1.0] }}
