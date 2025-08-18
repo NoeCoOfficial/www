@@ -10,8 +10,8 @@ export default function Home() {
       <div className="max-w-2xl w-full grid md:grid-cols-2 grid-cols-1 mx-auto p-3 gap-10">
         <motion.div
           className="self-center flex justify-center items-center"
-          initial={{ opacity: 0, x: -25 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.1 }}
         >
           <Image
@@ -24,8 +24,8 @@ export default function Home() {
         </motion.div>
         <motion.div
           className="self-center"
-          initial={{ opacity: 0, x: 25 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.2 }}
         >
           <h1 className="text-center text-4xl font-bold">
