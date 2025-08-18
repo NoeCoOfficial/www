@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 export default function Home() {
   return (
-    <div className="my-auto">
+    <div className="my-auto py-5">
       <div className="max-w-2xl w-full grid md:grid-cols-2 grid-cols-1 mx-auto p-3 gap-10">
         <motion.div
           className="self-center flex justify-center items-center"
