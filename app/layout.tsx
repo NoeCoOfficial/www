@@ -33,13 +33,13 @@ export default function RootLayout({
       <body
         className={`${geistMono.variable} ${schibstedGrotesk.className} antialiased`}
       >
-        <div className="flex flex-col min-h-screen">
-          <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main className="grow">{children}</main>
+            <main className="grow h-full">{children}</main>
             <Footer />
-          </ThemeProvider>
-        </div>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
