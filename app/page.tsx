@@ -28,7 +28,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.2 }}
         >
-          <h1 className="text-center text-4xl font-bold">
+          <h1 className="md:text-center text-4xl font-bold">
             Making indie games for everyone.
           </h1>
         </motion.div>
