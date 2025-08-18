@@ -6,10 +6,10 @@ import { motion } from "motion/react";
 
 export default function Home() {
   return (
-    <div className="my-auto py-5">
-      <div className="max-w-2xl w-full grid md:grid-cols-2 grid-cols-1 mx-auto p-3 gap-10">
+    <div className="my-auto py-5 flex flex-col gap-2 p-2">
+      <div className="max-w-2xl w-full grid md:grid-cols-2 grid-cols-1 mx-auto gap-2">
         <motion.div
-          className="self-center flex justify-center items-center"
+          className="self-center flex justify-center items-center bg-card rounded-md rounded-t-2xl md:rounded-tr-md p-3"
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.1 }}
@@ -23,7 +23,7 @@ export default function Home() {
           />
         </motion.div>
         <motion.div
-          className="self-center"
+          className="self-center bg-card h-full flex justify-center items-center p-3 rounded-md md:rounded-tr-2xl"
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.2 }}
@@ -34,7 +34,7 @@ export default function Home() {
         </motion.div>
       </div>
       <motion.div
-        className="max-w-2xl w-full mx-auto mt-5 p-3"
+        className="max-w-2xl w-full mx-auto p-3 bg-card rounded-md rounded-b-2xl"
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.3 }}
