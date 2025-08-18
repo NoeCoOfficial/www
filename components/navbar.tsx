@@ -37,57 +37,59 @@ export function Navbar() {
     <>
       <div className="h-10"></div>
       <motion.nav
+        className="fixed top-0 left-0 right-0 w-full bg-background/25 backdrop-blur-2xl z-50"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: [0.165, 0.84, 0.44, 1.0] }}
-        className="container mx-auto p-3 px-5 font-bold text-md flex flex-row gap-5 fixed top-0 bg-background/25 backdrop-blur-2xl"
       >
-        <Link href="/">Noe Co.</Link>
-        <div className="grow"></div>
-        {navItems.map((item, index) => (
-          <Link
-            href={item.href}
-            className="hidden md:inline"
-            target={item.target}
-            key={index}
+        <div className="container mx-auto p-3 px-5 font-bold text-md flex flex-row gap-5">
+          <Link href="/">Noe Co.</Link>
+          <div className="grow"></div>
+          {navItems.map((item, index) => (
+            <Link
+              href={item.href}
+              className="hidden md:inline"
+              target={item.target}
+              key={index}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <Drawer
+            direction="right"
+            open={mobileMenuOpen}
+            onOpenChange={setMobileMenuOpen}
           >
-            {item.label}
-          </Link>
-        ))}
-        <Drawer
-          direction="right"
-          open={mobileMenuOpen}
-          onOpenChange={setMobileMenuOpen}
-        >
-          <DrawerTrigger className="md:hidden">Menu</DrawerTrigger>
-          <DrawerContent>
-            <DrawerHeader className="sr-only">
-              <DrawerTitle>Menu</DrawerTitle>
-            </DrawerHeader>
-            <div className="text-xl font-bold flex flex-col justify-center">
-              <Link href="/" className="p-4">
-                <Image
-                  src="/logo-transparent.png"
-                  alt="Noe Co. Logo"
-                  className="max-w-52"
-                  width={500}
-                  height={305}
-                />
-              </Link>
-
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="p-4"
-                  target={item.target}
-                >
-                  {item.label}
+            <DrawerTrigger className="md:hidden">Menu</DrawerTrigger>
+            <DrawerContent>
+              <DrawerHeader className="sr-only">
+                <DrawerTitle>Menu</DrawerTitle>
+              </DrawerHeader>
+              <div className="text-xl font-bold flex flex-col justify-center">
+                <Link href="/" className="p-4">
+                  <Image
+                    src="/logo-transparent.png"
+                    alt="Noe Co. Logo"
+                    className="max-w-52"
+                    width={500}
+                    height={305}
+                  />
                 </Link>
-              ))}
-            </div>
-          </DrawerContent>
-        </Drawer>
+
+                {navItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="p-4"
+                    target={item.target}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </DrawerContent>
+          </Drawer>
+        </div>
       </motion.nav>
     </>
   );
