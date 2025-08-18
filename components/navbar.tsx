@@ -43,23 +43,14 @@ export function Navbar() {
       <Link href="/">Noe Co.</Link>
       <div className="grow"></div>
       {navItems.map((item, index) => (
-        <motion.div
-          key={item.href}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{
-            ease: [0.165, 0.84, 0.44, 1.0],
-            delay: index * 0.03 + 0.2,
-          }}
+        <Link
+          href={item.href}
+          className="hidden md:inline"
+          target={item.target}
+          key={index}
         >
-          <Link
-            href={item.href}
-            className="hidden md:inline"
-            target={item.target}
-          >
-            {item.label}
-          </Link>
-        </motion.div>
+          {item.label}
+        </Link>
       ))}
       <Drawer
         direction="right"
