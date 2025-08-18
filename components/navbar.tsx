@@ -34,7 +34,7 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <motion.div
+    <motion.nav
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: [0.165, 0.84, 0.44, 1.0] }}
@@ -86,6 +86,6 @@ export function Navbar() {
           </div>
         </DrawerContent>
       </Drawer>
-    </motion.div>
+    </motion.nav>
   );
 }
