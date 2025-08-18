@@ -12,6 +12,7 @@ import {
 } from "./ui/drawer";
 import Image from "next/image";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/", label: "Home", target: "_self" },
@@ -32,6 +33,7 @@ const navItems = [
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
@@ -52,7 +54,17 @@ export function Navbar() {
               target={item.target}
               key={index}
             >
-              {item.label}
+              <motion.span
+                animate={{
+                  color:
+                    pathname === item.href ? "var(--primary)" : "var(--muted)",
+                }}
+                whileHover={{
+                  color: "var(--foreground)",
+                }}
+              >
+                {item.label}
+              </motion.span>
             </Link>
           ))}
           <Drawer
@@ -83,7 +95,16 @@ export function Navbar() {
                     className="p-4"
                     target={item.target}
                   >
-                    {item.label}
+                    <motion.span
+                      animate={{
+                        color:
+                          pathname === item.href
+                            ? "var(--primary)"
+                            : "var(--foreground)",
+                      }}
+                    >
+                      {item.label}
+                    </motion.span>
                   </Link>
                 ))}
               </div>
