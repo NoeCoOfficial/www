@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
@@ -8,6 +9,7 @@ import { useRef } from "react";
 export function ExplandPageContent() {
   const heroSection = useRef(null);
   const textSection = useRef(null);
+  const downloadSection = useRef(null);
   const { scrollYProgress: heroSectionScrollYProgress } = useScroll({
     target: heroSection,
     offset: ["0%", "75%"],
@@ -16,6 +18,11 @@ export function ExplandPageContent() {
     target: textSection,
     offset: ["-75%", "0%"],
   });
+  const { scrollYProgress: downloadSectionScrollYProgress } = useScroll({
+    target: downloadSection,
+    offset: ["-75%", "0%"],
+  });
+
   const heroSectionOpacity = useTransform(
     heroSectionScrollYProgress,
     [0, 1],
@@ -44,7 +51,23 @@ export function ExplandPageContent() {
   const textSectionY = useTransform(
     textSectionScrollYProgress,
     [0, 1],
-    [300, 0],
+    [-100, 0],
+  );
+
+  const downloadSectionOpacity = useTransform(
+    downloadSectionScrollYProgress,
+    [0, 1],
+    [0, 1],
+  );
+  const downloadSectionFilter = useTransform(
+    downloadSectionScrollYProgress,
+    [0, 1],
+    ["blur(10px)", "blur(0px)"],
+  );
+  const downloadSectionY = useTransform(
+    downloadSectionScrollYProgress,
+    [0, 1],
+    [-100, 0],
   );
 
   return (
@@ -107,6 +130,21 @@ export function ExplandPageContent() {
           Face adversity, hardship, enjoy adventure as well, and discover a
           second chance to fix past mistakes and become a better person in a
           mysterious world with nightmares and happiness just around the corner.
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        className="w-full h-screen flex flex-col items-center justify-center text-2xl text-center p-2"
+        ref={downloadSection}
+      >
+        <motion.div
+          style={{
+            opacity: downloadSectionOpacity,
+            filter: downloadSectionFilter,
+            translateY: downloadSectionY,
+          }}
+        >
+          <Button size="lg">Download Expland</Button>
         </motion.div>
       </motion.div>
     </motion.div>
