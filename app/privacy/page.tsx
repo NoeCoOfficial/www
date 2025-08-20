@@ -4,6 +4,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy",
+  description:
+    "At Noe Co, we are committed to protecting your privacy and being transparent about how we collect, use, and share information about you.",
 };
 
 export default function PrivacyPage() {

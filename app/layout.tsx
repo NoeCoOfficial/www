@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     default: "Noe Co.",
     template: "%s | Noe Co.",
   },
+  description:
+    "We are a partnership of two developers looking to find joy in making video games",
 };
 
 export default function RootLayout({

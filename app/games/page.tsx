@@ -7,6 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Games",
+  description:
+    "We are a partnership of two developers looking to find joy in making video games",
 };
 
 const games: Game[] = [
