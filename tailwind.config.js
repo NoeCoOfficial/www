@@ -6,7 +6,7 @@ module.exports = {
         custom: {
           css: {
             "--tw-prose-body": "var(--color-text)",
-            "--tw-prose-headings": "var(--color-primary)",
+            "--tw-prose-headings": "var(--color-text)",
             "--tw-prose-lead": "var(--color-text)",
             "--tw-prose-links": "var(--color-primary)",
             "--tw-prose-bold": "var(--color-text)",
