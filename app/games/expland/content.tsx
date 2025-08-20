@@ -21,10 +21,20 @@ export function ExplandPageContent() {
     [0, 1],
     [1, 0],
   );
+  const heroSectionFilter = useTransform(
+    heroSectionScrollYProgress,
+    [0, 1],
+    ["blur(0px)", "blur(10px)"],
+  );
   const textSectionScale = useTransform(
     textSectionScrollYProgress,
     [0, 1],
     [0.9, 1],
+  );
+  const textSectionFilter = useTransform(
+    textSectionScrollYProgress,
+    [0, 1],
+    ["blur(10px)", "blur(0px)"],
   );
 
   return (
@@ -37,7 +47,7 @@ export function ExplandPageContent() {
       <motion.div
         className="w-full h-screen -z-10"
         ref={heroSection}
-        style={{ opacity: heroSectionOpacity }}
+        style={{ opacity: heroSectionOpacity, filter: heroSectionFilter }}
       >
         <div className="h-[50%] w-full from-black to-transparent bg-gradient-to-t absolute bottom-0 left-0 z-10"></div>
         <div className="h-96 opacity-75 w-full from-black to-transparent bg-gradient-to-b absolute top-0 left-0 z-10"></div>
@@ -80,6 +90,7 @@ export function ExplandPageContent() {
           style={{
             opacity: textSectionScrollYProgress,
             scale: textSectionScale,
+            filter: textSectionFilter,
           }}
         >
           Face adversity, hardship, enjoy adventure as well, and discover a
