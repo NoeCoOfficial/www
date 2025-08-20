@@ -167,10 +167,10 @@ export function ExplandPageContent() {
             filter: downloadSectionFilter,
             translateY: downloadSectionY,
           }}
-          className="flex flex-col items-center gap-2"
+          className="flex flex-col items-center gap-4"
         >
           <h2 className="text-4xl text-center">Download Expland now</h2>
-          <div className="flex flex-col sm:flex-row gap-2">
+          <div className="flex flex-col sm:flex-row gap-4">
             <DownloadButton />
             <Button size="lg" variant="outline">
               Source Code
