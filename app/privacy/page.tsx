@@ -1,3 +1,4 @@
+import Content from "@/components/content";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,5 +6,9 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPage() {
-  return <div></div>;
+  return (
+    <Content>
+      <h1>Privacy</h1>
+    </Content>
+  );
 }
