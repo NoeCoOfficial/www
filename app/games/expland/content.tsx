@@ -125,8 +125,8 @@ export function ExplandPageContent() {
           </div>
         </motion.div>
         <motion.video
-          initial={{ opacity: 0, filter: "blur(30px)" }}
-          animate={{ opacity: 1, filter: "blur(0)" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
           src="/assets/expland/gameplay.webm"
           className="w-full h-full object-cover absolute top-0 left-0"
