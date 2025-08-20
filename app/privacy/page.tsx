@@ -19,8 +19,8 @@ export default function PrivacyPage() {
           performance
         </li>
         <li>
-          <strong>What we don't do:</strong> We never sell, rent, or trade your
-          personal information
+          <strong>What we don&apos;t do:</strong> We never sell, rent, or trade
+          your personal information
         </li>
         <li>
           <strong>Third-party services:</strong> We use PostHog for analytics,
@@ -132,7 +132,7 @@ export default function PrivacyPage() {
       <p>
         We use PostHog to collect and analyze website usage data. PostHog helps
         us understand how users interact with our site to improve the user
-        experience. For more information about PostHog's privacy practices,
+        experience. For more information about PostHog&apos;s privacy practices,
         please review their{" "}
         <Link
           href="https://posthog.com/privacy"
@@ -148,7 +148,7 @@ export default function PrivacyPage() {
       <p>
         Our website traffic is proxied through Cloudflare for security and
         performance purposes. Cloudflare may collect certain information as part
-        of providing these services. Please review Cloudflare's{" "}
+        of providing these services. Please review Cloudflare&apos;s{" "}
         <Link
           href="https://www.cloudflare.com/privacypolicy/"
           target="_blank"
@@ -162,8 +162,8 @@ export default function PrivacyPage() {
       <h3>GitHub</h3>
       <p>
         We host our code repositories and may provide download links through
-        GitHub. When you access our GitHub repositories, GitHub's privacy policy
-        applies. Please review GitHub's{" "}
+        GitHub. When you access our GitHub repositories, GitHub&apos;s privacy
+        policy applies. Please review GitHub&apos;s{" "}
         <Link
           href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
           target="_blank"
@@ -177,8 +177,8 @@ export default function PrivacyPage() {
       <h3>Discord</h3>
       <p>
         We may provide links to our Discord community. Any information you share
-        on Discord is subject to Discord's privacy policy. Please review
-        Discord's{" "}
+        on Discord is subject to Discord&apos;s privacy policy. Please review
+        Discord&apos;s{" "}
         <Link
           href="https://discord.com/privacy"
           target="_blank"
@@ -192,8 +192,8 @@ export default function PrivacyPage() {
       <h3>YouTube</h3>
       <p>
         We may link to our YouTube channel or embed YouTube content. Your
-        interactions with YouTube content are governed by Google's privacy
-        policy. Please review Google's{" "}
+        interactions with YouTube content are governed by Google&apos;s privacy
+        policy. Please review Google&apos;s{" "}
         <Link
           href="https://policies.google.com/privacy"
           target="_blank"
@@ -232,7 +232,7 @@ export default function PrivacyPage() {
         <li>The right to data portability</li>
       </ul>
 
-      <h2>Children's Privacy</h2>
+      <h2>Children&apos;s Privacy</h2>
       <p>
         Our services are not directed to children under the age of 13. We do not
         knowingly collect personal information from children under 13. If we

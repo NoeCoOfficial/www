@@ -20,7 +20,9 @@ export default function AboutPage() {
       <Team />
       <h2>Dedications</h2>
       <ul>
-        <li>Mel Timpson, for being the world's greatest school teacher.</li>
+        <li>
+          Mel Timpson, for being the world&apos;s greatest school teacher.
+        </li>
         <li>
           Erik Miller, another founder of Noe Co., who left to pursue other
           things.
@@ -71,7 +73,7 @@ export default function AboutPage() {
         </li>
       </ul>
       <h2>About this website</h2>
-      99% of people don't care about this so I put it at the end.
+      99% of people don&apos;t care about this so I put it at the end.
       <br />
       This is a Next.js website using shadcn (yes really, not all shadcn
       websites look the same)

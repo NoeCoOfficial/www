@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { motion } from "motion/react";
+
 import { ExplandPageContent } from "./content";
 
 export const metadata: Metadata = {

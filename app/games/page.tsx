@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import { Game } from "@/lib/interfaces";
 import { GameComponent } from "./game";
-import { ChevronDown, ChevronRight } from "lucide-react";
+
 import Link from "next/link";
 
 export const metadata: Metadata = {
