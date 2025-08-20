@@ -5,6 +5,7 @@ import { Game } from "@/lib/interfaces";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export function GameComponent({ game, index }: { game: Game; index: number }) {
   return (
@@ -15,7 +16,14 @@ export function GameComponent({ game, index }: { game: Game; index: number }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.1 + index * 0.1 }}
     >
-      <div className="w-full h-full bg-neutral-500 aspect-video rounded"></div>
+      {/*<div className="w-full h-full bg-neutral-500 aspect-video rounded"></div>*/}
+      <Image
+        src={game.image.src}
+        alt={game.name}
+        width={game.image.width}
+        height={game.image.height}
+        className="w-full h-full aspect-video rounded object-cover"
+      />
       <div className="flex flex-col gap-4">
         <h2 className="text-4xl">{game.name}</h2>
         <p className="text-xl">{game.description}</p>
