@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
+import { Button } from "./ui/button";
 
 export function Footer() {
   return (
@@ -19,7 +20,7 @@ export function Footer() {
           </Link>
           .
         </div>
-        <div className="flex flex-row gap-2 justify-end [&>a]:underline">
+        <div className="flex flex-row gap-2 justify-end">
           <Link href="/about">About</Link>
           <Link href="https://github.com/NoeCoOfficial">Github</Link>
           <Link href="https://discord.gg/QNgcKCAJn3">Discord</Link>
