@@ -33,6 +33,7 @@ export function ExplandPageContent() {
     [0, 1],
     ["blur(0px)", "blur(10px)"],
   );
+
   const textSectionScale = useTransform(
     textSectionScrollYProgress,
     [0, 1],
