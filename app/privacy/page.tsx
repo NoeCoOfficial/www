@@ -1,5 +1,6 @@
 import Content from "@/components/content";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy",
@@ -133,13 +134,13 @@ export default function PrivacyPage() {
         us understand how users interact with our site to improve the user
         experience. For more information about PostHog's privacy practices,
         please review their{" "}
-        <a
+        <Link
           href="https://posthog.com/privacy"
           target="_blank"
           rel="noopener noreferrer"
         >
           Privacy Policy
-        </a>
+        </Link>
         .
       </p>
 
@@ -148,13 +149,13 @@ export default function PrivacyPage() {
         Our website traffic is proxied through Cloudflare for security and
         performance purposes. Cloudflare may collect certain information as part
         of providing these services. Please review Cloudflare's{" "}
-        <a
+        <Link
           href="https://www.cloudflare.com/privacypolicy/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Privacy Policy
-        </a>{" "}
+        </Link>{" "}
         for more information.
       </p>
 
@@ -163,13 +164,13 @@ export default function PrivacyPage() {
         We host our code repositories and may provide download links through
         GitHub. When you access our GitHub repositories, GitHub's privacy policy
         applies. Please review GitHub's{" "}
-        <a
+        <Link
           href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
           target="_blank"
           rel="noopener noreferrer"
         >
           Privacy Statement
-        </a>
+        </Link>
         .
       </p>
 
@@ -178,13 +179,13 @@ export default function PrivacyPage() {
         We may provide links to our Discord community. Any information you share
         on Discord is subject to Discord's privacy policy. Please review
         Discord's{" "}
-        <a
+        <Link
           href="https://discord.com/privacy"
           target="_blank"
           rel="noopener noreferrer"
         >
           Privacy Policy
-        </a>{" "}
+        </Link>{" "}
         before participating.
       </p>
 
@@ -193,13 +194,13 @@ export default function PrivacyPage() {
         We may link to our YouTube channel or embed YouTube content. Your
         interactions with YouTube content are governed by Google's privacy
         policy. Please review Google's{" "}
-        <a
+        <Link
           href="https://policies.google.com/privacy"
           target="_blank"
           rel="noopener noreferrer"
         >
           Privacy Policy
-        </a>
+        </Link>
         .
       </p>
 
