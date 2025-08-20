@@ -86,7 +86,11 @@ export function Navbar() {
                 <DrawerTitle>Menu</DrawerTitle>
               </DrawerHeader>
               <div className="text-xl font-bold flex flex-col justify-center">
-                <Link href="/" className="p-4">
+                <Link
+                  href="/"
+                  className="p-4"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   <Image
                     src="/logo-transparent.png"
                     alt="Noe Co. Logo"
