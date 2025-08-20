@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Expland Game",
+  title: "Expland",
 };
 
 export default function ExplandPage() {
