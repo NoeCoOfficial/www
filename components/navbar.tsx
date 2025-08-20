@@ -56,11 +56,17 @@ export function Navbar() {
               <motion.span
                 initial={{
                   color:
-                    pathname === item.href ? "var(--primary)" : "var(--muted)",
+                    pathname.startsWith(item.href) &&
+                    !(item.href == "/" && pathname !== item.href)
+                      ? "var(--primary)"
+                      : "var(--muted)",
                 }}
                 animate={{
                   color:
-                    pathname === item.href ? "var(--primary)" : "var(--muted)",
+                    pathname.startsWith(item.href) &&
+                    !(item.href == "/" && pathname !== item.href)
+                      ? "var(--primary)"
+                      : "var(--muted)",
                 }}
                 whileHover={{
                   color: "var(--foreground)",
@@ -101,9 +107,11 @@ export function Navbar() {
                     <motion.span
                       animate={{
                         color:
-                          pathname === item.href
+                          pathname.startsWith(item.href) &&
+                          item.href !== "/" &&
+                          pathname !== item.href
                             ? "var(--primary)"
-                            : "var(--foreground)",
+                            : "var(--muted)",
                       }}
                     >
                       {item.label}
