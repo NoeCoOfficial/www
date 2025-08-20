@@ -102,13 +102,15 @@ export function Navbar() {
                     href={item.href}
                     className="p-4"
                     target={item.target}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                    }}
                   >
                     <motion.span
                       animate={{
                         color:
                           pathname.startsWith(item.href) &&
-                          item.href !== "/" &&
-                          pathname !== item.href
+                          !(item.href == "/" && pathname !== item.href)
                             ? "var(--primary)"
                             : "var(--muted)",
                       }}
