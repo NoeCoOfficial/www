@@ -55,6 +55,10 @@ export function Navbar() {
               key={index}
             >
               <motion.span
+                initial={{
+                  color:
+                    pathname === item.href ? "var(--primary)" : "var(--muted)",
+                }}
                 animate={{
                   color:
                     pathname === item.href ? "var(--primary)" : "var(--muted)",
