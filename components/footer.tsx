@@ -19,9 +19,10 @@ export function Footer() {
           </Link>
           .
         </p>
-        <div className="flex flex-row gap-1 justify-center [&>a]:underline">
+        <div className="flex flex-row gap-2 justify-center [&>a]:underline">
+          <Link href="https://github.com/NoeCoOfficial">Github</Link>
+          <Link href="https://discord.gg/QNgcKCAJn3">Discord</Link>
           <Link href="/privacy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
         </div>
       </div>
     </motion.footer>
