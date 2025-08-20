@@ -16,7 +16,7 @@ export function ExplandPageContent() {
   });
   const { scrollYProgress: textSectionScrollYProgress } = useScroll({
     target: textSection,
-    offset: ["-75%", "0%"],
+    offset: ["-75%", "100%"],
   });
   const { scrollYProgress: downloadSectionScrollYProgress } = useScroll({
     target: downloadSection,
@@ -36,23 +36,23 @@ export function ExplandPageContent() {
 
   const textSectionScale = useTransform(
     textSectionScrollYProgress,
-    [0, 1],
-    [0.9, 1],
+    [0, 0.5, 1],
+    [0.9, 1, 0.9],
   );
   const textSectionOpacity = useTransform(
     textSectionScrollYProgress,
-    [0, 1],
-    [0, 1],
+    [0, 0.5, 1],
+    [0, 1, 0],
   );
   const textSectionFilter = useTransform(
     textSectionScrollYProgress,
-    [0, 1],
-    ["blur(10px)", "blur(0px)"],
+    [0, 0.5, 1],
+    ["blur(10px)", "blur(0px)", "blur(10px)"],
   );
   const textSectionY = useTransform(
     textSectionScrollYProgress,
-    [0, 1],
-    [-100, 0],
+    [0, 0.5, 1],
+    [-100, 0, -100],
   );
 
   const downloadSectionOpacity = useTransform(
