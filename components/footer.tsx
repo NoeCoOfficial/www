@@ -3,6 +3,13 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 import { Button } from "./ui/button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faDiscord,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -22,9 +29,20 @@ export function Footer() {
         </div>
         <div className="flex flex-row gap-2 justify-end">
           <Link href="/about">About</Link>
-          <Link href="https://github.com/NoeCoOfficial">Github</Link>
-          <Link href="https://discord.gg/QNgcKCAJn3">Discord</Link>
           <Link href="/privacy">Privacy</Link>
+          <Link href="mailto:contact@noeco.xyz">contact@noeco.xyz</Link>
+          <Link href="https://github.com/NoeCoOfficial">
+            <span className="sr-only">Github</span>
+            <FontAwesomeIcon icon={faGithub} />
+          </Link>
+          <Link href="https://discord.gg/QNgcKCAJn3" target="_blank">
+            <span className="sr-only">Discord</span>
+            <FontAwesomeIcon icon={faDiscord} />
+          </Link>
+          <Link href="https://www.youtube.com/@noeco.official" target="_blank">
+            <span className="sr-only">YouTube</span>
+            <FontAwesomeIcon icon={faYoutube} />
+          </Link>
         </div>
       </div>
     </motion.footer>
