@@ -27,7 +27,7 @@ const games: Game[] = [
 
 export default function GamesPage() {
   return (
-    <div className="flex flex-col gap-4 mx-auto p-2 w-full max-w-5xl md:mt-10 mt-5">
+    <div className="flex flex-col gap-4 mx-auto p-2 w-full max-w-5xl md:mt-15 mt-10">
       {games.map((game, index) => (
         <GameComponent game={game} index={index} key={index} />
       ))}
