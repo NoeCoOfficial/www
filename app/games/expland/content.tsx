@@ -10,11 +10,11 @@ export function ExplandPageContent() {
   const textSection = useRef(null);
   const { scrollYProgress: heroSectionScrollYProgress } = useScroll({
     target: heroSection,
-    offset: ["0%", "50%"],
+    offset: ["0%", "75%"],
   });
   const { scrollYProgress: textSectionScrollYProgress } = useScroll({
     target: textSection,
-    offset: ["-50%", "0%"],
+    offset: ["-75%", "0%"],
   });
   const heroSectionOpacity = useTransform(
     heroSectionScrollYProgress,
