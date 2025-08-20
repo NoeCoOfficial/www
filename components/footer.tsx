@@ -13,7 +13,7 @@ import {
 export function Footer() {
   return (
     <motion.footer
-      className="p-4"
+      className="p-4 border-t border-dashed"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: [0.165, 0.84, 0.44, 1.0] }}
