@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Game } from "@/lib/interfaces";
 import { GameComponent } from "./game";
 import { ChevronDown, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Games",
@@ -17,8 +18,13 @@ const games: Game[] = [
     url: "/games/expland",
     buttons: (
       <>
-        <Button>
-          Download <ChevronDown />
+        <Button asChild>
+          <Link
+            href="https://github.com/NoeCoOfficial/Expland/releases"
+            target="_blank"
+          >
+            Download
+          </Link>
         </Button>
       </>
     ),
