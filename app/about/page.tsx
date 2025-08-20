@@ -71,6 +71,16 @@ export default function AboutPage() {
           : For hosting our code
         </li>
       </ul>
+      <h2>About this website</h2>
+      99% of people don't care about this so I put it at the end.
+      <br />
+      This is a Next.js website using shadcn (yes really, not all shadcn
+      websites look the same)
+      <br />
+      Source code is on{" "}
+      <Link href="https://github.com/NoeCoOfficial/www" target="_blank">
+        Github
+      </Link>
     </Content>
   );
 }
