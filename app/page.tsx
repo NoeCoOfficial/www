@@ -3,6 +3,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { motion } from "motion/react";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -44,6 +46,19 @@ export default function Home() {
         development, called Expland, which we plan to be our first game to
         release to the public. We are putting our heart and soul into this game,
         and we hope you enjoy it when it comes out. Stay tuned!
+        <br />
+        <motion.div
+          initial={{ opacity: 0, x: 25 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.4 }}
+          className="flex w-full justify-end"
+        >
+          <Button asChild variant="link">
+            <Link href="/about">
+              More <ChevronRight />
+            </Link>
+          </Button>
+        </motion.div>
       </motion.div>
     </div>
   );
