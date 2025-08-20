@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import { Game } from "@/lib/interfaces";
 import { GameComponent } from "./game";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Games",
@@ -16,7 +17,9 @@ const games: Game[] = [
     url: "/games/expland",
     buttons: (
       <>
-        <Button>Download</Button>
+        <Button>
+          Download <ChevronDown />
+        </Button>
       </>
     ),
   },

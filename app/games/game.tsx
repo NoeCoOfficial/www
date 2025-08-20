@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Game } from "@/lib/interfaces";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { ChevronRight } from "lucide-react";
 
 export function GameComponent({ game, index }: { game: Game; index: number }) {
   return (
@@ -22,7 +23,9 @@ export function GameComponent({ game, index }: { game: Game; index: number }) {
         <div className="flex flex-row flex-wrap gap-2">
           {game.buttons}
           <Button variant="outline" asChild>
-            <Link href={game.url}>More</Link>
+            <Link href={game.url}>
+              More <ChevronRight />
+            </Link>
           </Button>
         </div>
       </div>
