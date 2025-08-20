@@ -31,10 +31,20 @@ export function ExplandPageContent() {
     [0, 1],
     [0.9, 1],
   );
+  const textSectionOpacity = useTransform(
+    textSectionScrollYProgress,
+    [0, 1],
+    [0, 1],
+  );
   const textSectionFilter = useTransform(
     textSectionScrollYProgress,
     [0, 1],
     ["blur(10px)", "blur(0px)"],
+  );
+  const textSectionY = useTransform(
+    textSectionScrollYProgress,
+    [0, 1],
+    [300, 0],
   );
 
   return (
@@ -88,9 +98,10 @@ export function ExplandPageContent() {
         <motion.div
           className="w-full max-w-lg"
           style={{
-            opacity: textSectionScrollYProgress,
+            opacity: textSectionOpacity,
             scale: textSectionScale,
             filter: textSectionFilter,
+            translateY: textSectionY,
           }}
         >
           Face adversity, hardship, enjoy adventure as well, and discover a
