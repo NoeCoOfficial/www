@@ -4,19 +4,26 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
-import { useRef } from "react";
+import { RefObject, useRef } from "react";
 
 export function ExplandPageContent() {
-  const heroSection = useRef(null);
-  const textSection = useRef(null);
-  const downloadSection = useRef(null);
+  const heroSection = useRef(null) as
+    | RefObject<HTMLDivElement>
+    | RefObject<null>;
+  const textSection = useRef(null) as
+    | RefObject<HTMLDivElement>
+    | RefObject<null>;
+  const downloadSection = useRef(null) as
+    | RefObject<HTMLDivElement>
+    | RefObject<null>;
+
   const { scrollYProgress: heroSectionScrollYProgress } = useScroll({
     target: heroSection,
     offset: ["0%", "75%"],
   });
   const { scrollYProgress: textSectionScrollYProgress } = useScroll({
     target: textSection,
-    offset: ["-75%", "100%"],
+    offset: ["-50%", "50%"],
   });
   const { scrollYProgress: downloadSectionScrollYProgress } = useScroll({
     target: downloadSection,
@@ -36,23 +43,23 @@ export function ExplandPageContent() {
 
   const textSectionScale = useTransform(
     textSectionScrollYProgress,
-    [0, 0.5, 1],
-    [0.9, 1, 0.9],
+    [0, 0.25, 0.75, 1],
+    [0.9, 1, 1, 0.9],
   );
   const textSectionOpacity = useTransform(
     textSectionScrollYProgress,
-    [0, 0.5, 1],
-    [0, 1, 0],
+    [0, 0.25, 0.75, 1],
+    [0, 1, 1, 0],
   );
   const textSectionFilter = useTransform(
     textSectionScrollYProgress,
-    [0, 0.5, 1],
-    ["blur(10px)", "blur(0px)", "blur(10px)"],
+    [0, 0.25, 0.75, 1],
+    ["blur(10px)", "blur(0px)", "blur(0px)", "blur(10px)"],
   );
   const textSectionY = useTransform(
     textSectionScrollYProgress,
-    [0, 0.5, 1],
-    [-100, 0, -100],
+    [0, 0.25, 0.75, 1],
+    [-100, 0, 0, -100],
   );
 
   const downloadSectionOpacity = useTransform(
@@ -86,7 +93,7 @@ export function ExplandPageContent() {
         <div className="h-[50%] w-full from-black to-transparent bg-gradient-to-t absolute bottom-0 left-0 z-10"></div>
         <div className="h-96 opacity-75 w-full from-black to-transparent bg-gradient-to-b absolute top-0 left-0 z-10"></div>
         <motion.div
-          className="z-20 absolute bottom-10 left-[50%] translate-x-[-50%] flex items-center flex-col"
+          className="z-20 absolute bottom-10 left-[50%] translate-x-[-50%] flex items-center flex-col gap-2"
           initial={{ opacity: 0, scale: 0.8, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{
@@ -102,7 +109,20 @@ export function ExplandPageContent() {
             width={885}
             height={282}
           />
-          <ChevronDown />
+          <div className="flex flex-row gap-2">
+            <DownloadButton />
+            <Button
+              size="lg"
+              variant="ghost"
+              onClick={() => {
+                if (textSection.current) {
+                  textSection.current.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              <ChevronDown />
+            </Button>
+          </div>
         </motion.div>
         <motion.video
           initial={{ opacity: 0, filter: "blur(30px)" }}
@@ -145,9 +165,13 @@ export function ExplandPageContent() {
             translateY: downloadSectionY,
           }}
         >
-          <Button size="lg">Download Expland</Button>
+          <DownloadButton />
         </motion.div>
       </motion.div>
     </motion.div>
   );
+}
+
+function DownloadButton() {
+  return <Button size="lg">Download</Button>;
 }
