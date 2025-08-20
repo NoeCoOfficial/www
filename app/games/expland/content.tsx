@@ -165,7 +165,12 @@ export function ExplandPageContent() {
             translateY: downloadSectionY,
           }}
         >
-          <DownloadButton />
+          <div className="flex flex-row gap-2">
+            <DownloadButton />
+            <Button size="lg" variant="outline">
+              Source Code
+            </Button>
+          </div>
         </motion.div>
       </motion.div>
     </motion.div>
