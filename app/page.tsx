@@ -36,7 +36,7 @@ export default function Home() {
         </motion.div>
       </div>
       <motion.div
-        className="max-w-2xl w-full mx-auto p-3 bg-card rounded-md rounded-b-2xl"
+        className="max-w-2xl w-full mx-auto p-3 bg-card rounded-md rounded-b-2xl flex flex-col gap-2"
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.3 }}
@@ -47,9 +47,14 @@ export default function Home() {
           initial={{ opacity: 0, x: 25 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.4 }}
-          className="flex w-full justify-end"
+          className="flex w-full md:justify-end gap-2 md:flex-row flex-col"
         >
-          <Button asChild variant="link">
+          <Button asChild variant="ghost">
+            <Link href="/games">
+              Games <ChevronRight />
+            </Link>
+          </Button>
+          <Button asChild variant="ghost">
             <Link href="/about">
               More <ChevronRight />
             </Link>
