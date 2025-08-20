@@ -3,8 +3,11 @@
 import { ChevronDown } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
+import { useRef } from "react";
 
 export function ExplandPageContent() {
+  const textSection = useRef(null);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -45,7 +48,10 @@ export function ExplandPageContent() {
           loop
         />
       </motion.div>
-      <motion.div className="w-full h-screen flex flex-col items-center justify-center text-2xl text-center p-2">
+      <motion.div
+        className="w-full h-screen flex flex-col items-center justify-center text-2xl text-center p-2"
+        ref={textSection}
+      >
         <div className="w-full max-w-lg">
           Face adversity, hardship, enjoy adventure as well, and discover a
           second chance to fix past mistakes and become a better person in a
