@@ -37,7 +37,7 @@ export function Navbar() {
 
   return (
     <>
-      <div className="h-10"></div>
+      <div className="h-12"></div>
       <motion.nav
         className="fixed top-0 left-0 right-0 w-full bg-background/25 backdrop-blur-2xl z-50"
         initial={{ opacity: 0, y: -20 }}
