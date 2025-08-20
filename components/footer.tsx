@@ -9,7 +9,6 @@ import {
   faDiscord,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { Mail } from "lucide-react";
 
 export function Footer() {
   return (
