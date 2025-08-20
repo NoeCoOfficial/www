@@ -11,15 +11,15 @@ export function Footer() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: [0.165, 0.84, 0.44, 1.0] }}
     >
-      <div className="container mx-auto text-center">
-        <p>
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
           &copy; {new Date().getFullYear()} Noe Co. Website by{" "}
           <Link href="https://ingo.au/" target="_blank" className="underline">
             Ingo
           </Link>
           .
-        </p>
-        <div className="flex flex-row gap-2 justify-center [&>a]:underline">
+        </div>
+        <div className="flex flex-row gap-2 justify-end [&>a]:underline">
           <Link href="/about">About</Link>
           <Link href="https://github.com/NoeCoOfficial">Github</Link>
           <Link href="https://discord.gg/QNgcKCAJn3">Discord</Link>
