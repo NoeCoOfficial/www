@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import { RefObject, useRef } from "react";
+import animateScrollTo from "animated-scroll-to";
 
 export function ExplandPageContent() {
   const heroSection = useRef(null) as
@@ -116,7 +117,9 @@ export function ExplandPageContent() {
               variant="ghost"
               onClick={() => {
                 if (textSection.current) {
-                  textSection.current.scrollIntoView({ behavior: "smooth" });
+                  animateScrollTo(textSection.current, {
+                    speed: 1500,
+                  });
                 }
               }}
             >
