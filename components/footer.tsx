@@ -20,6 +20,7 @@ export function Footer() {
           .
         </p>
         <div className="flex flex-row gap-2 justify-center [&>a]:underline">
+          <Link href="/about">About</Link>
           <Link href="https://github.com/NoeCoOfficial">Github</Link>
           <Link href="https://discord.gg/QNgcKCAJn3">Discord</Link>
           <Link href="/privacy">Privacy</Link>
