@@ -64,6 +64,12 @@ export default function AboutPage() {
           </Link>
           : For providing a free learning resource and millions of tutorials.
         </li>
+        <li>
+          <Link href="https://github.com/" target="_blank">
+            Github
+          </Link>
+          : for hosting our code
+        </li>
       </ul>
     </Content>
   );
