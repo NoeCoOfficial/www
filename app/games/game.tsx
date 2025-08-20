@@ -6,17 +6,17 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { useAnimationConfig } from "@/lib/hooks/useAnimationConfig";
 
 export function GameComponent({ game, index }: { game: Game; index: number }) {
+  const animations = useAnimationConfig();
+
   return (
     <motion.div
       className="w-full grid md:grid-cols-2 gap-4"
       key={game.name}
-      initial={{ opacity: 0, y: 25 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.1 + index * 0.1 }}
+      {...animations.fadeInUp(animations.staggerDelay(index))}
     >
-      {/*<div className="w-full h-full bg-neutral-500 aspect-video rounded"></div>*/}
       <Image
         src={game.image.src}
         alt={game.name}
@@ -29,7 +29,13 @@ export function GameComponent({ game, index }: { game: Game; index: number }) {
         <p className="text-xl">{game.description}</p>
         <div className="grow"></div>
         <div className="flex flex-row flex-wrap gap-2">
-          {game.buttons}
+          {game.downloadUrl && (
+            <Button asChild>
+              <Link href={game.downloadUrl} target="_blank">
+                Download
+              </Link>
+            </Button>
+          )}
           <Button variant="outline" asChild>
             <Link href={game.url}>
               More <ChevronRight />

@@ -1,9 +1,17 @@
-import { JSX } from "react";
-
 export interface Game {
   name: string;
   description: string;
   image: { src: string; width: number; height: number };
   url: string;
-  buttons: JSX.Element;
+  downloadUrl?: string;
+}
+
+export interface TeamMember {
+  name: string;
+  description: string;
+  socialLinks: {
+    github?: string;
+    discord?: string;
+    youtube?: string;
+  };
 }

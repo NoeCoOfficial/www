@@ -2,21 +2,21 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faDiscord,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { useAnimationConfig } from "@/lib/hooks/useAnimationConfig";
 
 export function Footer() {
+  const animations = useAnimationConfig();
+
   return (
     <motion.footer
       className="p-4 border-t border-dashed"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ ease: [0.165, 0.84, 0.44, 1.0] }}
+      {...animations.fadeInUp()}
     >
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
