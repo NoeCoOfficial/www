@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import { RefObject, useRef } from "react";
 import animateScrollTo from "animated-scroll-to";
+import Link from "next/link";
 
 export function ExplandPageContent() {
   const heroSection = useRef(null) as
@@ -172,8 +173,13 @@ export function ExplandPageContent() {
           <h2 className="text-4xl text-center">Download Expland now</h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <DownloadButton />
-            <Button size="lg" variant="outline">
-              Source Code
+            <Button size="lg" variant="outline" asChild>
+              <Link
+                href="https://github.com/NoeCoOfficial/Expland/"
+                target="_blank"
+              >
+                Source Code
+              </Link>
             </Button>
           </div>
         </motion.div>
@@ -183,5 +189,14 @@ export function ExplandPageContent() {
 }
 
 function DownloadButton() {
-  return <Button size="lg">Download</Button>;
+  return (
+    <Button size="lg" asChild>
+      <Link
+        href="https://github.com/NoeCoOfficial/Expland/releases"
+        target="_blank"
+      >
+        Download
+      </Link>
+    </Button>
+  );
 }
