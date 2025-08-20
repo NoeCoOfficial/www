@@ -97,7 +97,7 @@ export function ExplandPageContent() {
           initial={{ opacity: 0, scale: 0.8, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{
-            duration: 3,
+            duration: 1,
             delay: 1.5,
             ease: [0.165, 0.84, 0.44, 1.0],
           }}
