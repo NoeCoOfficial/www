@@ -41,11 +41,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.3 }}
       >
-        We are a partnership of two developers looking to find joy in making
-        video games. Currently as of writing, we only have one game in
-        development, called Expland, which we plan to be our first game to
-        release to the public. We are putting our heart and soul into this game,
-        and we hope you enjoy it when it comes out. Stay tuned!
+        We are a partnership of two who like making games.
         <br />
         <motion.div
           initial={{ opacity: 0, x: 25 }}
