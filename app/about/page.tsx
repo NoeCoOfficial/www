@@ -68,7 +68,7 @@ export default function AboutPage() {
           <Link href="https://github.com/" target="_blank">
             Github
           </Link>
-          : for hosting our code
+          : For hosting our code
         </li>
       </ul>
     </Content>
