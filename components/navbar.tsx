@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const navItems = [
   { href: "/", label: "Home", target: "_self" },
@@ -37,9 +38,19 @@ export function Navbar() {
   return (
     <>
       <motion.nav
-        className="fixed top-0 left-0 right-0 w-full bg-background/25 backdrop-blur-2xl z-50"
+        className="fixed top-0 left-0 right-0 w-full bg-background/25 z-50"
         initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={{
+          opacity: pathname == "/games/expland" ? 0.3 : 1,
+          backgroundColor:
+            pathname == "/games/expland"
+              ? "transparent"
+              : "color-mix(in oklab, var(--background) 25%, transparent)",
+          backdropFilter:
+            pathname == "/games/expland" ? "blur(0px)" : "blur(40px)",
+          y: 0,
+        }}
+        whileHover={{ opacity: 1 }}
         transition={{ ease: [0.165, 0.84, 0.44, 1.0] }}
       >
         <div className="container mx-auto p-3 px-5 font-bold text-md flex flex-row gap-5">
