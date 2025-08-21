@@ -4,3 +4,5 @@ compatibility_flags = ["nodejs_compat"]
 compatibility_date = "2025-08-21"
 [vars]
 NODE_VERSION = "22"
+NEXT_PUBLIC_POSTHOG_KEY = "phc_Rg2oqcsjfE7qSqF811Nl0ooMojQ9rX45CDepFfJYBcw"
+NEXT_PUBLIC_POSTHOG_HOST = "https://us.i.posthog.com"
