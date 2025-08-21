@@ -1,0 +1,4 @@
+name = "noecowebsite"
+pages_build_output_dir = ".vercel/output/static"
+[vars]
+NODE_VERSION = "22"
