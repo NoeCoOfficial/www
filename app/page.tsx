@@ -60,7 +60,7 @@ export default function Home() {
           </Button>
           <Button asChild variant="ghost">
             <Link href="/about">
-              More <ChevronRight />
+              About <ChevronRight />
             </Link>
           </Button>
         </motion.div>
