@@ -8,7 +8,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="my-auto  flex flex-col gap-2 p-2 py-12">
+    <div className="my-auto flex flex-col gap-2 p-2 py-12">
       <div className="max-w-2xl w-full grid md:grid-cols-2 grid-cols-1 mx-auto gap-2">
         <motion.div
           className="self-center flex justify-center items-center bg-card rounded-md rounded-t-2xl md:rounded-tr-md p-5"
