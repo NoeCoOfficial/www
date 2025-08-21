@@ -93,7 +93,7 @@ export function ExplandPageContent() {
         style={{ opacity: heroSectionOpacity, filter: heroSectionFilter }}
       >
         <div className="h-[50%] w-full from-black to-transparent bg-gradient-to-t absolute bottom-0 left-0 z-10"></div>
-        <div className="h-96 opacity-75 w-full from-black to-transparent bg-gradient-to-b absolute top-0 left-0 z-10"></div>
+        <div className="h-96 opacity-90 w-full from-black to-transparent bg-gradient-to-b absolute top-0 left-0 z-10"></div>
         <motion.div
           className="z-20 absolute bottom-10 left-[50%] translate-x-[-50%] flex items-center flex-col gap-2"
           initial={{ opacity: 0, scale: 0.8, y: 30 }}
