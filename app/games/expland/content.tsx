@@ -84,7 +84,7 @@ export function ExplandPageContent() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2, delay: 0 }}
+      transition={{ duration: 0.5, delay: 0 }}
       className="bg-black"
     >
       <motion.div
@@ -100,7 +100,7 @@ export function ExplandPageContent() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{
             duration: 1,
-            delay: 1.5,
+            delay: 3,
             ease: [0.165, 0.84, 0.44, 1.0],
           }}
         >
@@ -129,9 +129,6 @@ export function ExplandPageContent() {
           </div>
         </motion.div>
         <motion.video
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.75 }}
-          transition={{ duration: 1, delay: 1.5 }}
           src="/assets/expland/gameplay.webm"
           className="w-full h-full object-cover absolute top-0 left-0"
           autoPlay
