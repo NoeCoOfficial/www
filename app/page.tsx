@@ -31,7 +31,7 @@ export default function Home() {
           transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.2 }}
         >
           <h1 className="md:text-center text-4xl font-bold">
-            Making indie games for everyone.
+            Indie games made with heart.
           </h1>
         </motion.div>
       </div>
@@ -41,11 +41,11 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.3 }}
       >
-        We are a partnership of two developers looking to find joy in making
-        video games. Currently, as of writing, we only have one game in
-        development, called Expland, which we plan to be our first game to
-        release to the public. We are putting our heart and soul into this game,
-        and we hope you enjoy it when it comes out. Stay tuned!
+        We’re Noe Co., a small indie team passionate about creating meaningful
+        and memorable games. Right now, we’re developing our debut title, Expland; a low-poly sandbox 
+        adventure inspired by creativity, exploration, and discovery. This is just the beginning 
+        of our journey, and we can’t wait to share more as we bring our
+        ideas to life. Follow along and be part of the story!
         <br />
         <motion.div
           initial={{ opacity: 0, x: 25 }}
