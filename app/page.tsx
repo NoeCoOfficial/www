@@ -42,7 +42,7 @@ export default function Home() {
         transition={{ ease: [0.165, 0.84, 0.44, 1.0], delay: 0.3 }}
       >
         We’re Noe Co., a small indie team passionate about creating meaningful
-        and memorable games. Right now, we’re developing our debut title, Expland; a low-poly sandbox 
+        and memorable games. Right now, we’re developing our debut title, Expland; a low-poly 
         adventure inspired by creativity, exploration, and discovery. This is just the beginning 
         of our journey, and we can’t wait to share more as we bring our
         ideas to life. Follow along and be part of the story!
