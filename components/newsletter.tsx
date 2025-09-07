@@ -123,20 +123,22 @@ export default function NewsletterBox({
   description?: string;
 }) {
   return (
-    <motion.div
-      className={clsx(
-        "max-w-prose mx-auto w-full p-4 border border-dashed rounded-md flex flex-col gap-1",
-        className,
-      )}
-      initial={initial}
-      animate={animate}
-      transition={transition}
-    >
-      <h2 className={clsx("text-xl font-bold")}>{heading}</h2>
-      <p>{description}</p>
-      <div className="w-full mt-2">
-        <NewsletterForm />
-      </div>
-    </motion.div>
+    <div className="mx-auto p-2 w-full max-w-prose">
+      <motion.div
+        className={clsx(
+          "w-full p-4 border border-dashed rounded-md flex flex-col gap-1",
+          className,
+        )}
+        initial={initial}
+        animate={animate}
+        transition={transition}
+      >
+        <h2 className={clsx("text-xl font-bold")}>{heading}</h2>
+        <p>{description}</p>
+        <div className="w-full mt-2">
+          <NewsletterForm />
+        </div>
+      </motion.div>
+    </div>
   );
 }
