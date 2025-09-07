@@ -66,7 +66,7 @@ async function subscribe(email: string) {
   const options = {
     method: "POST",
     headers: {
-      "X-Kit-Api-Key": "<api-key>",
+      "X-Kit-Api-Key": process.env.KIT_API_KEY || "",
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
