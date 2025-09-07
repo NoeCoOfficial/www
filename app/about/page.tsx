@@ -87,7 +87,7 @@ export default function AboutPage() {
           Github
         </Link>
       </Content>
-      <NewsletterBox className="mb-4" />
+      <NewsletterBox className="mb-8" />
     </>
   );
 }
