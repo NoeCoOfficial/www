@@ -4,6 +4,7 @@ import { Game } from "@/lib/interfaces";
 import { GameComponent } from "./game";
 
 import Link from "next/link";
+import NewsletterBox from "@/components/newsletter";
 
 export const metadata: Metadata = {
   title: "Games",
@@ -35,10 +36,19 @@ const games: Game[] = [
 
 export default function GamesPage() {
   return (
-    <div className="flex flex-col gap-4 mx-auto p-2 w-full max-w-5xl md:mt-15 mt-10">
-      {games.map((game, index) => (
-        <GameComponent game={game} index={index} key={index} />
-      ))}
-    </div>
+    <>
+      <div className="flex flex-col gap-4 mx-auto p-2 w-full max-w-5xl md:mt-15 mt-10">
+        {games.map((game, index) => (
+          <GameComponent game={game} index={index} key={index} />
+        ))}
+      </div>
+      <NewsletterBox
+        transition={{
+          ease: [0.165, 0.84, 0.44, 1.0],
+          delay: 0.1 + games.length * 0.1,
+        }}
+        className="mt-5"
+      />
+    </>
   );
 }
