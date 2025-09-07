@@ -7,6 +7,7 @@ import Image from "next/image";
 import { RefObject, useRef } from "react";
 import animateScrollTo from "animated-scroll-to";
 import Link from "next/link";
+import NewsletterBox from "@/components/newsletter";
 
 export function ExplandPageContent() {
   const heroSection = useRef(null) as
@@ -179,6 +180,7 @@ export function ExplandPageContent() {
               </Link>
             </Button>
           </div>
+          <NewsletterBox />
         </motion.div>
       </motion.div>
     </motion.div>
