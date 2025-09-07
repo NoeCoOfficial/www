@@ -40,7 +40,13 @@ export default function GamesPage() {
       {games.map((game, index) => (
         <GameComponent game={game} index={index} key={index} />
       ))}
-      <NewsletterBox className="mt-5" />
+      <NewsletterBox
+        transition={{
+          ease: [0.165, 0.84, 0.44, 1.0],
+          delay: 0.1 + games.length * 0.1,
+        }}
+        className="mt-5"
+      />
     </div>
   );
 }
