@@ -6,7 +6,10 @@ export async function POST(request: NextRequest) {
   const verification = await checkBotId();
 
   if (verification.isBot) {
-    return NextResponse.json({ error: "Access denied" }, { status: 403 });
+    return NextResponse.json(
+      { success: false, message: "Access denied" },
+      { status: 403 },
+    );
   }
 
   let email;
