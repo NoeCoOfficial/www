@@ -11,16 +11,16 @@ import {
 } from "motion/react";
 
 export function NewsletterForm({
-  onSubmit = () => {},
+  onSubmitAction = () => {},
 }: {
-  onSubmit?: (email: string) => void;
+  onSubmitAction?: (email: string) => void;
 }) {
   return (
     <form
       onSubmit={(event) => {
         event.preventDefault();
         const email = (event.target as HTMLFormElement).email.value;
-        onSubmit(email);
+        onSubmitAction(email);
       }}
     >
       <div className="flex flex-row gap-2 p-2">
