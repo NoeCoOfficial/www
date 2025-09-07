@@ -19,7 +19,7 @@ export function Footer() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: [0.165, 0.84, 0.44, 1.0] }}
     >
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div>
           &copy; {new Date().getFullYear()} Noe Co. Website by{" "}
           <Link href="https://ingo.au/" target="_blank" className="underline">
@@ -27,7 +27,7 @@ export function Footer() {
           </Link>
           .
         </div>
-        <div className="flex gap-2 justify-end md:flex-row flex-col">
+        <div className="flex gap-2 justify-end lg:flex-row flex-col">
           <NewsletterDialog
             triggerText="Join Newsletter"
             triggerClassName="text-left cursor-pointer"
