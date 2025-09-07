@@ -28,7 +28,10 @@ export function Footer() {
           .
         </div>
         <div className="flex gap-2 justify-end md:flex-row flex-col">
-          <NewsletterDialog triggerText="Join Newsletter" />
+          <NewsletterDialog
+            triggerText="Join Newsletter"
+            triggerClassName="text-left"
+          />
           <Link href="/about">About</Link>
           <Link href="/privacy">Privacy</Link>
           <Link href="mailto:contact@noeco.xyz">contact@noeco.xyz</Link>
