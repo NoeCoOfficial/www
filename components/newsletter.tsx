@@ -26,6 +26,7 @@ export function NewsletterForm({
   onSubmitAction?: (email: string) => void;
 }) {
   const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   return (
     <form
@@ -47,6 +48,7 @@ export function NewsletterForm({
                   setSubmitting(false);
                   if (data.success) {
                     onSubmitAction(email);
+                    setSubmitted(true);
                     resolve(data.message);
                   } else {
                     reject(data.message);
@@ -66,15 +68,19 @@ export function NewsletterForm({
         );
       }}
     >
-      <div className="flex flex-row gap-2">
-        <Input
-          name="email"
-          type="email"
-          placeholder="Email"
-          disabled={submitting}
-        />
-        <Button disabled={submitting}>Subscribe</Button>
-      </div>
+      {submitted ? (
+        <div className="p-2 bg-card rounded-md text-center">Subscribed!</div>
+      ) : (
+        <div className="flex flex-row gap-2">
+          <Input
+            name="email"
+            type="email"
+            placeholder="Email"
+            disabled={submitting}
+          />
+          <Button disabled={submitting}>Subscribe</Button>
+        </div>
+      )}
     </form>
   );
 }
