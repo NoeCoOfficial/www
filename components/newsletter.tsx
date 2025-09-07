@@ -3,7 +3,7 @@
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
-export function NewsletterSubscribe() {
+export function NewsletterForm() {
   return (
     <form
       onSubmit={(event) => {
@@ -15,5 +15,16 @@ export function NewsletterSubscribe() {
         <Button>Subscribe</Button>
       </div>
     </form>
+  );
+}
+
+export default function NewsletterBox() {
+  return (
+    <div className="max-w-prose mx-auto w-full p-4 border border-dashed rounded-md flex flex-col items-center gap-2">
+      <h2 className="text-xl font-bold">Stay up to date</h2>
+      <div className="w-full">
+        <NewsletterForm />
+      </div>
+    </div>
   );
 }
