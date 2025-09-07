@@ -18,6 +18,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { useState } from "react";
+import { toast } from "sonner";
 
 export function NewsletterForm({
   onSubmitAction = () => {},
@@ -29,7 +30,33 @@ export function NewsletterForm({
       onSubmit={(event) => {
         event.preventDefault();
         const email = (event.target as HTMLFormElement).email.value;
-        onSubmitAction(email);
+        toast.promise(
+          new Promise((resolve, reject) => {
+            fetch("api/subscribe", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ email }),
+            })
+              .then((response) =>
+                response.json().then((data) => {
+                  if (data.success) {
+                    onSubmitAction(email);
+                    resolve(data.message);
+                  } else {
+                    reject(data.message);
+                  }
+                }),
+              )
+              .catch((error) => reject(error));
+          }),
+          {
+            loading: "Submitting...",
+            success: (response) => response as string,
+            error: (error) => error,
+          },
+        );
       }}
     >
       <div className="flex flex-row gap-2">
