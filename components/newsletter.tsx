@@ -10,11 +10,17 @@ import {
   VariantLabels,
 } from "motion/react";
 
-export function NewsletterForm() {
+export function NewsletterForm({
+  onSubmit = () => {},
+}: {
+  onSubmit?: (email: string) => void;
+}) {
   return (
     <form
       onSubmit={(event) => {
         event.preventDefault();
+        const email = (event.target as HTMLFormElement).email.value;
+        onSubmit(email);
       }}
     >
       <div className="flex flex-row gap-2 p-2">
