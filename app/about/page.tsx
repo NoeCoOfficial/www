@@ -2,7 +2,7 @@ import Content from "@/components/content";
 import { Metadata } from "next";
 import { Team } from "./team";
 import Link from "next/link";
-import { NewsletterSubscribe } from "@/components/newsletter";
+import NewsletterBox from "@/components/newsletter";
 
 export const metadata: Metadata = {
   title: "About",
@@ -87,7 +87,7 @@ export default function AboutPage() {
           Github
         </Link>
       </Content>
-      <NewsletterSubscribe />
+      <NewsletterBox />
     </>
   );
 }
