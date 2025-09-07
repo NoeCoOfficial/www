@@ -42,6 +42,17 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  try {
+    await subscribe(email);
+  } catch {
+    return new Response(
+      JSON.stringify({ success: false, message: "Something went wrong" }),
+      {
+        status: 500,
+      },
+    );
+  }
+
   return new Response(
     JSON.stringify({ success: true, message: "Email subscribed successfully" }),
     {
