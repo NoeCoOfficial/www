@@ -36,10 +36,12 @@ const games: Game[] = [
 
 export default function GamesPage() {
   return (
-    <div className="flex flex-col gap-4 mx-auto p-2 w-full max-w-5xl md:mt-15 mt-10">
-      {games.map((game, index) => (
-        <GameComponent game={game} index={index} key={index} />
-      ))}
+    <>
+      <div className="flex flex-col gap-4 mx-auto p-2 w-full max-w-5xl md:mt-15 mt-10">
+        {games.map((game, index) => (
+          <GameComponent game={game} index={index} key={index} />
+        ))}
+      </div>
       <NewsletterBox
         transition={{
           ease: [0.165, 0.84, 0.44, 1.0],
@@ -47,6 +49,6 @@ export default function GamesPage() {
         }}
         className="mt-5"
       />
-    </div>
+    </>
   );
 }
