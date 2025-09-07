@@ -9,6 +9,15 @@ import {
   Transition,
   VariantLabels,
 } from "motion/react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useState } from "react";
 
 export function NewsletterForm({
   onSubmitAction = () => {},
@@ -23,11 +32,39 @@ export function NewsletterForm({
         onSubmitAction(email);
       }}
     >
-      <div className="flex flex-row gap-2 p-2">
+      <div className="flex flex-row gap-2">
         <Input name="email" type="email" placeholder="Email" />
         <Button>Subscribe</Button>
       </div>
     </form>
+  );
+}
+
+export function NewsletterDialog({
+  dialogClassName,
+  triggerClassName,
+  triggerText = "Subscribe",
+  heading = "Stay up to date",
+  description = "Get the latest news and updates",
+}: {
+  dialogClassName?: string;
+  triggerClassName?: string;
+  triggerText?: string;
+  heading?: string;
+  description?: string;
+}) {
+  const [dialogOpen, setDialogOpen] = useState(false);
+  return (
+    <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+      <DialogTrigger className={triggerClassName}>{triggerText}</DialogTrigger>
+      <DialogContent className={dialogClassName}>
+        <DialogHeader>
+          <DialogTitle>{heading}</DialogTitle>
+          <DialogDescription>{description}</DialogDescription>
+        </DialogHeader>
+        <NewsletterForm onSubmitAction={() => setDialogOpen(false)} />
+      </DialogContent>
+    </Dialog>
   );
 }
 
@@ -37,27 +74,28 @@ export default function NewsletterBox({
   animate = { opacity: 1, y: 0 },
   transition = { ease: [0.165, 0.84, 0.44, 1.0], delay: 0.2 },
   heading = "Stay up to date",
-  headingClassName,
+  description = "Get the latest news and updates",
 }: {
   className?: string;
   initial?: boolean | TargetAndTransition | VariantLabels | undefined;
   animate?: boolean | TargetAndTransition | VariantLabels | undefined;
   transition?: Transition<any> | undefined;
   heading?: string;
-  headingClassName?: string;
+  description?: string;
 }) {
   return (
     <motion.div
       className={clsx(
-        "max-w-prose mx-auto w-full p-4 border border-dashed rounded-md flex flex-col items-center gap-2",
+        "max-w-prose mx-auto w-full p-4 border border-dashed rounded-md flex flex-col gap-1",
         className,
       )}
       initial={initial}
       animate={animate}
       transition={transition}
     >
-      <h2 className={clsx("text-xl font-bold", headingClassName)}>{heading}</h2>
-      <div className="w-full">
+      <h2 className={clsx("text-xl font-bold")}>{heading}</h2>
+      <p>{description}</p>
+      <div className="w-full mt-2">
         <NewsletterForm />
       </div>
     </motion.div>
