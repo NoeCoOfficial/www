@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/dialog";
 import { useState } from "react";
 import { toast } from "sonner";
+import posthog from "posthog-js";
 
 export function NewsletterForm({
   onSubmitAction = () => {},
@@ -33,6 +34,7 @@ export function NewsletterForm({
       onSubmit={(event) => {
         event.preventDefault();
         const email = (event.target as HTMLFormElement).email.value;
+        posthog.capture("newsletter_signup", { email });
         setSubmitting(true);
         toast.promise(
           new Promise((resolve, reject) => {
