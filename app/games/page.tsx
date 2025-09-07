@@ -4,6 +4,7 @@ import { Game } from "@/lib/interfaces";
 import { GameComponent } from "./game";
 
 import Link from "next/link";
+import NewsletterBox from "@/components/newsletter";
 
 export const metadata: Metadata = {
   title: "Games",
@@ -39,6 +40,7 @@ export default function GamesPage() {
       {games.map((game, index) => (
         <GameComponent game={game} index={index} key={index} />
       ))}
+      <NewsletterBox className="mt-5" />
     </div>
   );
 }
