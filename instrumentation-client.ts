@@ -1,4 +1,5 @@
 import posthog from "posthog-js";
+import { initBotId } from "botid/client/core";
 
 posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
   api_host: "/ingest",
@@ -7,4 +8,13 @@ posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
   capture_exceptions: true, // This enables capturing exceptions using Error Tracking, set to false if you don't want this
   debug: process.env.NODE_ENV === "development",
   person_profiles: "always",
+});
+
+initBotId({
+  protect: [
+    {
+      path: "/api/*",
+      method: "POST",
+    },
+  ],
 });
