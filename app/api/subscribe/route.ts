@@ -1,7 +1,18 @@
 import validator from "validator";
 
 export async function POST(request: Request) {
-  const { email } = await request.json();
+  let email;
+  try {
+    ({ email } = await request.json());
+  } catch (error) {
+    return new Response(
+      JSON.stringify({ success: false, message: "Invalid JSON body" }),
+      {
+        status: 400,
+      },
+    );
+  }
+
   if (!email) {
     return new Response(
       JSON.stringify({ success: false, message: "Email is required" }),
