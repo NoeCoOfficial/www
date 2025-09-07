@@ -157,7 +157,7 @@ export function ExplandPageContent() {
       </motion.div>
 
       <motion.div
-        className="w-full h-screen flex flex-col items-center justify-center text-2xl text-center p-2"
+        className="w-full h-screen flex flex-col items-center justify-center text-center p-2"
         ref={downloadSection}
       >
         <motion.div
