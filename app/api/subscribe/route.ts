@@ -49,3 +49,28 @@ export async function POST(request: NextRequest) {
     },
   );
 }
+
+async function subscribe(email: string) {
+  const url = "https://api.kit.com/v4/subscribers";
+  const options = {
+    method: "POST",
+    headers: {
+      "X-Kit-Api-Key": "<api-key>",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email_address: email,
+    }),
+  };
+
+  try {
+    const response = await fetch(url, options);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
