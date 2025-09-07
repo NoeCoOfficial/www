@@ -25,11 +25,14 @@ export function NewsletterForm({
 }: {
   onSubmitAction?: (email: string) => void;
 }) {
+  const [submitting, setSubmitting] = useState(false);
+
   return (
     <form
       onSubmit={(event) => {
         event.preventDefault();
         const email = (event.target as HTMLFormElement).email.value;
+        setSubmitting(true);
         toast.promise(
           new Promise((resolve, reject) => {
             fetch("api/subscribe", {
@@ -41,6 +44,7 @@ export function NewsletterForm({
             })
               .then((response) =>
                 response.json().then((data) => {
+                  setSubmitting(false);
                   if (data.success) {
                     onSubmitAction(email);
                     resolve(data.message);
@@ -49,7 +53,10 @@ export function NewsletterForm({
                   }
                 }),
               )
-              .catch((error) => reject(error));
+              .catch((error) => {
+                setSubmitting(false);
+                reject(error);
+              });
           }),
           {
             loading: "Submitting...",
@@ -60,8 +67,13 @@ export function NewsletterForm({
       }}
     >
       <div className="flex flex-row gap-2">
-        <Input name="email" type="email" placeholder="Email" />
-        <Button>Subscribe</Button>
+        <Input
+          name="email"
+          type="email"
+          placeholder="Email"
+          disabled={submitting}
+        />
+        <Button disabled={submitting}>Subscribe</Button>
       </div>
     </form>
   );
