@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
@@ -18,9 +19,14 @@ export function NewsletterForm() {
   );
 }
 
-export default function NewsletterBox() {
+export default function NewsletterBox({ className }: { className?: string }) {
   return (
-    <div className="max-w-prose mx-auto w-full p-4 border border-dashed rounded-md flex flex-col items-center gap-2">
+    <div
+      className={clsx(
+        "max-w-prose mx-auto w-full p-4 border border-dashed rounded-md flex flex-col items-center gap-2",
+        className,
+      )}
+    >
       <h2 className="text-xl font-bold">Stay up to date</h2>
       <div className="w-full">
         <NewsletterForm />
