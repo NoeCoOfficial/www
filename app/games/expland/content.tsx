@@ -180,7 +180,7 @@ export function ExplandPageContent() {
               </Link>
             </Button>
           </div>
-          <NewsletterBox />
+          <NewsletterBox className="border-0 border-t mt-2" />
         </motion.div>
       </motion.div>
     </motion.div>
