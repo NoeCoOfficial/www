@@ -69,7 +69,9 @@ export function NewsletterForm({
       }}
     >
       {submitted ? (
-        <div className="p-2 bg-card rounded-md text-center">Subscribed!</div>
+        <div className="p-2 bg-card rounded-md text-center border border-dashed">
+          Subscribed!
+        </div>
       ) : (
         <div className="flex flex-row gap-2">
           <Input
@@ -132,7 +134,7 @@ export default function NewsletterBox({
     <div className="mx-auto p-2 w-full max-w-prose">
       <motion.div
         className={clsx(
-          "w-full p-4 border border-dashed rounded-md flex flex-col gap-1",
+          "w-full p-4 border bg-card rounded-md flex flex-col gap-1",
           className,
         )}
         initial={initial}
