@@ -77,11 +77,14 @@ async function subscribe(email: string) {
   try {
     const response = await fetch(url, options);
     if (!response.ok) {
+      console.error(response.status);
+      console.error(response.json());
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
     return data;
   } catch (error) {
+    console.error(error);
     throw error;
   }
 }
