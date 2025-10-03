@@ -43,7 +43,7 @@ export function NewsletterForm({
               headers: {
                 "Content-Type": "application/json",
               },
-              body: JSON.stringify({ email }),
+              body: JSON.stringify({ email, source: "website" }),
             })
               .then((response) =>
                 response.json().then((data) => {
