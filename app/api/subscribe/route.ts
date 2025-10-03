@@ -3,8 +3,9 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   let email;
+  let source;
   try {
-    ({ email } = await request.json());
+    ({ email, source } = await request.json());
   } catch {
     return new Response(
       JSON.stringify({ success: false, message: "Invalid JSON body" }),
@@ -33,7 +34,7 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    await subscribe(email);
+    await subscribe(email, source);
   } catch {
     return new Response(
       JSON.stringify({ success: false, message: "Something went wrong" }),
@@ -51,7 +52,7 @@ export async function POST(request: NextRequest) {
   );
 }
 
-async function subscribe(email: string) {
+async function subscribe(email: string, source: string) {
   const url = "https://api.kit.com/v4/subscribers";
   const options = {
     method: "POST",
@@ -61,6 +62,9 @@ async function subscribe(email: string) {
     },
     body: JSON.stringify({
       email_address: email,
+      fields: {
+        source,
+      },
     }),
   };
 
