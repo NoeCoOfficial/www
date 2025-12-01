@@ -25,7 +25,7 @@ export function GameComponent({ game, index }: { game: Game; index: number }) {
         className="w-full h-full aspect-video rounded object-cover"
       />
       <div className="flex flex-col gap-4">
-        <h2 className="text-4xl">{game.name}</h2>
+        <h2 className="text-4xl font-bold">{game.name}</h2>
         <p className="text-xl">{game.description}</p>
         <div className="grow"></div>
         <div className="flex flex-row flex-wrap gap-2">
