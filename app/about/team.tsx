@@ -22,7 +22,7 @@ export function Team() {
           <CardTitle>Sebastian Suciu</CardTitle>
         </CardHeader>
         <CardContent>
-          Seb is a 15-year-old high school student who loves messing around with
+          Seb is a 16-year-old high school student who loves messing around with
           computers and programming languages. His favorite video game is
           Geometry Dash, and the engine he uses to make games is Godot and
           Blender. He has been making games and projects for over 2 years, and
@@ -63,7 +63,7 @@ export function Team() {
           <CardTitle>Tristan Taylor</CardTitle>
         </CardHeader>
         <CardContent>
-          Tristan is 15 years old and, unlike Seb, enjoys making game assets
+          Tristan is 16 years old and, unlike Seb, enjoys making game assets
           rather than coding, as well as being skilled in Blender, Soundtrap and
           paperwork. Tristan is the main source of ideas. He is great at making
           lore, storyboarding, and game planning. His favorite video game is
